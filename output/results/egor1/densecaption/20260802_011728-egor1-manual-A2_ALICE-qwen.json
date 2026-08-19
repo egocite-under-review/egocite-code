@@ -1,0 +1,1310 @@
+{
+  "accuracy": 60.0,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 397,
+      "type": "Event Recollection",
+      "question": "Who did I last see holding the eggbeater?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "19595014"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 37
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "hold eggbeater"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "egg beater",
+            "time_query": "DAY2 10452900 to DAY3 19595014"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha hold eggbeater",
+            "time_query": "DAY2 10452900 to DAY3 19595014"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 619,
+      "type": "Event Memory",
+      "question": "Who was the last person to hold a Kashi yogurt?",
+      "pred": "C",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11215307"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "hold Kashi yogurt"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Kashi yogurt"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Kashi yogurt brand"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pick up yogurt"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "type": "Event Recall",
+      "question": "The black coffee pot I'm holding in my hand. Who used it last time?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21005608"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 58
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "black coffee pot"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "person use coffee pot"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure hold coffee pot"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Katrina hold coffee pot"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 580,
+      "type": "Event Memory",
+      "question": "Where did we go on the last car ride?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "21192311"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 22
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "car ride"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "rideshare"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "car ride home",
+            "time_query": "DAY4 21100000 to DAY4 22000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Nicous rideshare",
+            "time_query": "DAY4 21100000 to DAY5 00000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 920,
+      "type": "Event Memory",
+      "question": "When was the last time I opened the puzzle box?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "14390105"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 48
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "open puzzle box"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "puzzle box"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "puzzle box",
+            "time_query": "DAY6 10000000 to DAY6 12000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "open puzzle"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "type": "Event Recall",
+      "question": "Who wiped the whiteboard earlier?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "14024210"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 20
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "wipe whiteboard"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 1
+        }
+      ]
+    },
+    {
+      "id": 685,
+      "type": "Event Recollection",
+      "question": "What did I last use the black tape for?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15433815"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 68
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "black tape"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "black tape",
+            "time_query": "DAY5 11300000 to DAY5 12000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "stick poster",
+            "time_query": "DAY5 11300000 to DAY5 12000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "paste flower",
+            "time_query": "DAY5 11400000 to DAY5 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1253,
+      "type": "Event Recollection",
+      "question": "Who is primarily responsible for cutting the stems after receiving the delivery?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "12502120"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 52
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cut stem"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "receive delivery flower"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "flower delivery responsibility"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1084,
+      "type": "Event Memory",
+      "question": "Where did I last place the black soft paper?",
+      "pred": "D",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY7",
+        "time": "12481509"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "black soft paper place"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "black soft paper"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "place paper drawer"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "place paper tray"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 487,
+      "type": "Event Memory",
+      "question": "What was I doing the last time I pulled a garbage bag?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11314316"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 51
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pull garbage bag"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "trash bag shelf",
+            "time_query": "DAY4 11300000 to DAY4 11320000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "trash bag",
+            "time_query": "DAY4 11250000 to DAY4 11350000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "trash can",
+            "time_query": "DAY4 11310000 to DAY4 11400000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "type": "Event Memory",
+      "question": "How many times did I go out the main gate today?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "19314212"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 43
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "go out main gate",
+            "time_query": "DAY6 00000000 to DAY6 19314212"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "exit main gate",
+            "time_query": "DAY6 00000000 to DAY6 19314212"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "go out main gate",
+            "time_query": "DAY6 00000000 to DAY6 19314212"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "leave house go out",
+            "time_query": "DAY6 00000000 to DAY6 19314212"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 704,
+      "type": "Entity Log",
+      "question": "What did I last throw into the outdoor trash can?",
+      "pred": "D",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "16343905"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "throw outdoor trash can",
+            "time_query": "DAY5 00000000 to DAY5 16343905"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "banana peel trash",
+            "time_query": "DAY5 00000000 to DAY5 16343905"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "newspaper trash",
+            "time_query": "DAY5 00000000 to DAY5 16343905"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "yogurt trash",
+            "time_query": "DAY5 00000000 to DAY5 16343905"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1039,
+      "type": "Event Memory",
+      "question": "I am stepping into the kitchen now, what was I doing the last time I entered the kitchen?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "20143205"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 79
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I enter kitchen",
+            "time_query": "DAY6 00000000 to DAY6 20143205"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I sandwich",
+            "time_query": "DAY6 17300000 to DAY6 18000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I cup",
+            "time_query": "DAY6 17350000 to DAY6 18000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I",
+            "time_query": "DAY6 17370000 to DAY6 17450000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1326,
+      "type": "Event Memory",
+      "question": "Why did Lucia choose this room of hers?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "15000419"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 22
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia room choose select"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia room spacious quiet view"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia pick room reason why"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "room random lottery assign"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1196,
+      "type": "Event Memory",
+      "question": "Who has ever been in a band?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY7",
+        "time": "15000419"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 32
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "band music play"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure band logo"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice band music"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha band instrument"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1203,
+      "type": "Event Memory",
+      "question": "Who was in the Charlotte's Troubles play in high school?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "15000419"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 29
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Charlotte's Troubles play high school"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "play high school performance"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Charlotte Troubles drama"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Charlotte play acting"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 281,
+      "type": "Event Recall",
+      "question": "What slogan does Lucia like?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21102304"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 33
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia slogan like"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia progress dream work"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia symbol draw slogan"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia symbol draw",
+            "time_query": "DAY2 16300000 to DAY2 16400000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "type": "Event Recollection",
+      "question": "What was Shure doing the last time he was holding the microphone?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "19562216"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure hold microphone"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Shure microphone",
+            "time_query": "DAY6 17200000 to DAY6 17400000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Shure",
+            "time_query": "DAY6 17250000 to DAY6 17350000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure microphone",
+            "time_query": "DAY6 17250000 to DAY6 17350000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "type": "Event Recall",
+      "question": "How many relationships has Tasha been in?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "22115204"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 16
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha relationship boyfriend"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha ex boyfriend past relationship"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha dating single never dated"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha first relationship number times"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "Event Recall",
+      "question": "What were we doing the first time Jake showed us the timer?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "12335307"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 52
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake show timer"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake timer show"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "stopwatch"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Jake timer stopwatch",
+            "time_query": "DAY1 11000000 to DAY1 11300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1318,
+      "type": "Event Memory",
+      "question": "What am I going to do with my chair on the fifth night?",
+      "pred": "D",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY7",
+        "time": "15000419"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "chair",
+            "time_query": "DAY5 18000000 to DAY5 23595999"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "chair",
+            "time_query": "DAY5 18000000 to DAY5 23595999"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "air conditioner",
+            "time_query": "DAY5 18000000 to DAY5 23595999"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 750,
+      "type": "Event Recollection",
+      "question": "Who sat on the pony chair last time?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "19433514"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 57
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pony chair sit"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pony chair"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "pony chair"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Katrina sit pony"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Entity Log",
+      "question": "The equipment Shure and Katrina are installing, where did they get these tools and materials from?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "11220610"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Shure Katrina install equipment"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure Katrina install"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure get tools"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Katrina take screw"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 660,
+      "type": "Event Recollection",
+      "question": "What were they doing the last time I ate something?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "12075919"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "eat food",
+            "time_query": "DAY5 12000000 to DAY5 12075919"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "eat",
+            "time_query": "DAY5 11570000 to DAY5 12075919"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "reading book",
+            "time_query": "DAY5 12050000 to DAY5 12080000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "watching TV",
+            "time_query": "DAY5 12050000 to DAY5 12080000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1041,
+      "type": "Event Memory",
+      "question": "What song was Shure singing last time?",
+      "pred": "C",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "20184818"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure sing song"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure song name",
+            "time_query": "DAY6 20100000 to DAY6 20170000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Wrong Love Unforgettable Tonight Battle Goodbye",
+            "time_query": "DAY6 20000000 to DAY6 20200000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure Wrong Love",
+            "time_query": "DAY6 20100000 to DAY6 20200000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    }
+  ]
+}

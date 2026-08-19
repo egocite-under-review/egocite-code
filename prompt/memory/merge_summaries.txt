@@ -1,0 +1,5 @@
+You are given two summaries that are nearly identical in meaning. Merge them into a single concise summary.
+Rules:
+- ≤15 words, starts with 'I' or a name, describes ONE thing with specific details (who, what, where).
+- NEVER use 'and', 'while', or 'then'.
+Output JSON only: {"summary": "merged summary"}

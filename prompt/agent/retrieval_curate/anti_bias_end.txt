@@ -1,0 +1,2 @@
+- Reserve judgment until `curate_evidence` + `answer()` — that is the only
+  moment you should commit.

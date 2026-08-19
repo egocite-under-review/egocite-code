@@ -1,0 +1,1 @@
+NOTE: A previous attempt returned an empty `groups` list. Return at least one group; together the groups must cover every caption index.

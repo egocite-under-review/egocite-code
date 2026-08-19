@@ -1,0 +1,1336 @@
+{
+  "accuracy": 56.00000000000001,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 61,
+      "type": "Entity Log",
+      "question": "How much was the mango purchased for?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "21082503"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "mango purchase buy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "mango price yuan cost"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "mango yuan price",
+            "time_query": "DAY1 17200000 to DAY1 19300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "mango buy dessert",
+            "time_query": "DAY1 17200000 to DAY1 19300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "type": "Future Plan",
+      "question": "Which activity are we planning to do tomorrow?",
+      "pred": "C",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "22351515"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 18
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tomorrow plan activity",
+            "time_query": "DAY2 00000000 to DAY2 22351515"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Xihai Park walk tomorrow",
+            "time_query": "DAY2 00000000 to DAY2 22351515"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "birthday celebration tomorrow",
+            "time_query": "DAY2 00000000 to DAY2 22351515"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 979,
+      "type": "Future Plan",
+      "question": "Which of the following options is not what I plan to buy?",
+      "pred": "B",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "17203909"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 37
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy mint cream coffee eggs",
+            "time_query": "DAY1 17000000 to DAY1 18000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "shopping list mint cream",
+            "time_query": "DAY1 13200000 to DAY1 14000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "coffee powder eggs milk cream",
+            "time_query": "DAY1 13200000 to DAY1 14000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "shopping list mint cream coffee eggs",
+            "time_query": "DAY1 13200000 to DAY1 14000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "Interpersonal Relationships",
+      "question": "Who was behind Alice the last time she was writing on the whiteboard?",
+      "pred": "C",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "20291011"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 51
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice write whiteboard"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice whiteboard"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Alice write whiteboard"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice write"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "type": "Entity Log",
+      "question": "How much were the green grapes purchased for?",
+      "pred": "B",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19110616"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 33
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "green grapes price buy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "grapes buy price"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "green grapes"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "grapes price yuan cost",
+            "time_query": "DAY1 17200000 to DAY1 17300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "type": "Entity Log",
+      "question": "Who installed the battery in the electronic scale?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19564502"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 65
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "install battery electronic scale"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake install battery scale"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia install battery"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha battery scale"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "type": "Entity Log",
+      "question": "Where were the purple flowers on the table before?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17505703"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 49
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "purple flowers table"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "purple flower garden"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "purple flower picked from"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pick purple flower"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "type": "\u4e8b\u4ef6\u56de\u5fc6",
+      "question": "What was the last thing Katrina wrote?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "20564610"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Katrina write",
+            "time_query": "DAY1 00000000 to DAY2 20564610"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina inventory",
+            "time_query": "DAY1 00000000 to DAY2 20564610"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina schedule",
+            "time_query": "DAY1 00000000 to DAY2 20564610"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina budget",
+            "time_query": "DAY1 00000000 to DAY2 20564610"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 356,
+      "type": "Entity Log",
+      "question": "Which supermarket did we enter last time?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16391802"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "enter supermarket"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Hema Fresh"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "enter Hema",
+            "time_query": "DAY3 15000000 to DAY3 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Carrefour Walmart Costco"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 949,
+      "type": "\u4e8b\u4ef6\u56de\u5fc6",
+      "question": "What did I last bake in the oven?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "18384616"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "bake oven",
+            "time_query": "DAY1 00000000 to DAY5 18384616"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "bake sweet potato",
+            "time_query": "DAY4 17000000 to DAY4 18000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "bake cake",
+            "time_query": "DAY5 18300000 to DAY5 19000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "egg tart",
+            "time_query": "DAY1 00000000 to DAY5 18384616"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1054,
+      "type": "Behavior Habits",
+      "question": "Who among us eats hot pot in a vinegar dish?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17565601"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 53
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "hot pot"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "vinegar hot pot"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "vinegar",
+            "time_query": "DAY2 17000000 to DAY2 18300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "eat hot pot vinegar",
+            "time_query": "DAY2 17000000 to DAY2 19000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1109,
+      "type": "Future Plan",
+      "question": "How many ego coins will be on sale after that?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15050303"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "ego coins sale"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "ego coin number"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "coin hunt puzzle rewards"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "ego coin sale price"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "auction coins how many"
+          },
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 274,
+      "type": "Entity Log",
+      "question": "What did I take the last time I went upstairs?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "22320819"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 75
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "go upstairs"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take carry item upstairs",
+            "time_query": "DAY2 20500000 to DAY2 21000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pick up wet wipe",
+            "time_query": "DAY2 20500000 to DAY2 21000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pick up book laptop tissue",
+            "time_query": "DAY2 20500000 to DAY2 21000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 459,
+      "type": "Entity Log",
+      "question": "What was photographed last time?",
+      "pred": "B",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "22454206"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take photo"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "photo",
+            "time_query": "DAY3 17300000 to DAY3 17320000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "beach",
+            "time_query": "DAY3 17000000 to DAY3 18000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "coconut",
+            "time_query": "DAY3 17000000 to DAY3 17400000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "photo",
+            "time_query": "DAY3 17000000 to DAY3 18000000"
+          },
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "type": "Entity Log",
+      "question": "What were the chocolate chips used for before?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11281603"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "chocolate chips"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "bake cookies",
+            "time_query": "DAY3 20000000 to DAY3 22000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "cookies",
+            "time_query": "DAY3 20000000 to DAY3 22000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 518,
+      "type": "Entity Log",
+      "question": "What did I find the last time I opened a package?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12471910"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 76
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "open package"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "dessert box"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "photo frame"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "gift box"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "notebook"
+          },
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 634,
+      "type": "Future Plan",
+      "question": "What fruit are we planning to buy?",
+      "pred": "B",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "16104514"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy fruit plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "strawberry orange apple blueberry"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tomorrow gathering fruit",
+            "time_query": "DAY5 15000000 to DAY5 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "buy strawberry",
+            "time_query": "DAY5 15000000 to DAY5 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 827,
+      "type": "Future Plan",
+      "question": "What is Alice preparing to auction?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "16504812"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 43
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice auction prepare"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice rose flower plant"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice item bring auction"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice plant flower bulb seed"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 892,
+      "type": "Interpersonal Relationships",
+      "question": "How many friends did Alice invite to the party?",
+      "pred": "B",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY7",
+        "time": "12081517"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice invite party friends"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice invite guests count"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice invite friends party"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice invite number people"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 936,
+      "type": "\u4e8b\u4ef6\u56de\u5fc6",
+      "question": "What happened the last time Lucia went to see the dog?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "16511702"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia dog"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia dog lick bite scratch"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia puppy jump scratch bite",
+            "time_query": "DAY4 16200000 to DAY4 16400000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia dog bite scratch",
+            "time_query": "DAY4 16000000 to DAY4 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 972,
+      "type": "Future Plan",
+      "question": "What is the purpose of this puzzle at the party?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "13241203"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "puzzle party"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "puzzle prize wildlife"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "daffodil bulb prize"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "puzzle activity event"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 985,
+      "type": "Future Plan",
+      "question": "Is there anything I didn't buy at the grocery store this time that I need to buy later?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19204505"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 25
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "grocery store shopping",
+            "time_query": "DAY1 18000000 to DAY1 20000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "taro out of stock",
+            "time_query": "DAY1 18000000 to DAY1 19000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy later missing items",
+            "time_query": "DAY1 18000000 to DAY1 19000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1101,
+      "type": "\u4e8b\u4ef6\u56de\u5fc6",
+      "question": "The last time I sat in a yard chair was because of what?",
+      "pred": "D",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "22010914"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 24
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "sit yard chair"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "yard chair"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "garden chair"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "outdoor chair"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1119,
+      "type": "Interpersonal Relationships",
+      "question": "Where was the last time we took a picture together?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "17202412"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take picture together"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "group photo",
+            "time_query": "DAY3 17150000 to DAY3 17200000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "supermarket",
+            "time_query": "DAY3 17000000 to DAY3 17250000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "mall",
+            "time_query": "DAY3 17100000 to DAY3 17250000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1132,
+      "type": "Future Plan",
+      "question": "What are our tasks today?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11442812"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tasks today meeting project",
+            "time_query": "DAY4 00000000 to DAY4 12000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "tasks work meeting project storage",
+            "time_query": "DAY4 00000000 to DAY4 12000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "storage room organize clean",
+            "time_query": "DAY4 00000000 to DAY4 12000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance dance practice choreography",
+            "time_query": "DAY4 00000000 to DAY4 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    }
+  ]
+}

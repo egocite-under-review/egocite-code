@@ -1,0 +1,1 @@
+NOTE: A previous attempt produced a block spanning more than $max_min minutes, which violates the $max_min-minute hard cap. Re-segment and split every block that exceeds $max_min minutes into smaller blocks. Each block must be 1–$max_min minutes.

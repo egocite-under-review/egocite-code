@@ -1,0 +1,1268 @@
+{
+  "accuracy": 72.0,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 1036,
+      "type": "Interpersonal Relationships",
+      "question": "Who was I talking to yesterday about emotional experiences while I was pressing flowers?",
+      "pred": "B",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11500916"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pressing flowers",
+            "time_query": "DAY4 00000000 to DAY4 23595999"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "emotional experience feelings",
+            "time_query": "DAY4 00000000 to DAY4 23595999"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "pressing flowers emotional feelings",
+            "time_query": "DAY4 12000000 to DAY4 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure feelings emotions",
+            "time_query": "DAY4 16000000 to DAY4 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1086,
+      "type": "Future Plans",
+      "question": "What does Shure have to accomplish on the 24th?",
+      "pred": "B",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12483400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure graduation design"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure 24th deadline"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure graduation 24"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure graduation design 24th"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1167,
+      "type": "Behavior Habit",
+      "question": "When is Jake used to booking flights?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17195809"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake flight booking ticket"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake last minute flight airport",
+            "time_query": "DAY2 11300600 to DAY2 11322700"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake flight ticket airport buy",
+            "time_query": "DAY2 11300000 to DAY2 11400000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1042,
+      "type": "Interpersonal Relationships",
+      "question": "Who made coffee and chatted with me today while I was doing dishes on the second floor?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15573218"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "doing dishes second floor",
+            "time_query": "DAY5 00000000 to DAY5 15573218"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "wash dishes",
+            "time_query": "DAY5 12000000 to DAY5 15573218"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "make coffee",
+            "time_query": "DAY5 11000000 to DAY5 15573218"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure coffee chat",
+            "time_query": "DAY5 11400000 to DAY5 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1039,
+      "type": "Behavior Habit",
+      "question": "What emotions do I end up feeling at the end of every concert I see?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "16013415"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "concert"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "performance"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "concert emotion feeling"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Taylor Swift concert cry"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1104,
+      "type": "Future Plans",
+      "question": "What will we do with the flowers after we press them?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "13024309"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 36
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "flowers press bookmark"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pressed flower bookmark postcard"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "flower craft Earth Day make"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pressed flower bookmark"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1094,
+      "type": "Behavior Habit",
+      "question": "Who do I usually use my cell phone to video call?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "18300408"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "video call"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "video call mom dad parent"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "video call grandma grandpa sister brother"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "phone video call parent mom dad"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 305,
+      "type": "Behavior Habits",
+      "question": "What vegetables do I not eat when having hot pot?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "18124317"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "hot pot vegetables not eat"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "I not eat vegetables"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "asparagus lettuce enoki mushroom"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I eat vegetables hot pot"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 550,
+      "type": "Entity Log",
+      "question": "What is the shelf life of yogurt?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11343617"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "yogurt shelf life days"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "yogurt shelf life days expiration"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 744,
+      "type": "Future Plans",
+      "question": "Is there anything we need to buy from Meituan?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "20371011"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Meituan buy alcohol"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Meituan tequila delivery"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Meituan order tequila"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1075,
+      "type": "Future Plans",
+      "question": "What do I think about career, education and love in my future life plans?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "18312917"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 33
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "career future plans"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "love relationship future"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "life plan priority balance"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "education study graduation career"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 361,
+      "type": "Future Plans",
+      "question": "What theme did I mention for decorating my room?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "11432800"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 10
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "decorate room theme"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 1
+        }
+      ]
+    },
+    {
+      "id": 498,
+      "type": "Interpersonal Relationships",
+      "question": "Who else joined in on the last cake making?",
+      "pred": "D",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "21032506"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 60
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "cake making",
+            "time_query": "DAY1 00000000 to DAY3 21032506"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cake making",
+            "time_query": "DAY3 20000000 to DAY3 21032506"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice cake",
+            "time_query": "DAY3 20000000 to DAY3 21032506"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cake join make",
+            "time_query": "DAY3 20000000 to DAY3 21032506"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 742,
+      "type": "Event Recollection",
+      "question": "Who paid the bill the last time at the supermarket?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "16285210"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 70
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "supermarket shopping"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pay bill checkout",
+            "time_query": "DAY5 16000000 to DAY5 16300000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake pay"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice pay bill"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 764,
+      "type": "Entity Log",
+      "question": "What was the last pastry Tasha made?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "18440710"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 53
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Tasha make pastry"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha make butter cookie"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Tasha bake butter cookie",
+            "time_query": "DAY4 11000000 to DAY4 12000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha make cookie",
+            "time_query": "DAY4 11000000 to DAY4 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 401,
+      "type": "Entity Log",
+      "question": "Who purchased the coins used in the game room today?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "21000321"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 61
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "coins game room",
+            "time_query": "DAY3 00000000 to DAY3 21000321"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy purchase coins",
+            "time_query": "DAY3 00000000 to DAY3 21000321"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pay coins tokens",
+            "time_query": "DAY3 15400000 to DAY3 15550000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure buy token coin",
+            "time_query": "DAY3 15400000 to DAY3 15550000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1098,
+      "type": "Behavior Habit",
+      "question": "What drinks do I usually have with breakfast?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "13000316"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 66
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "breakfast drink"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "drink coffee breakfast"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "drink milk breakfast"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "drink orange juice breakfast"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 510,
+      "type": "Entity Log",
+      "question": "Who prepared the meat in the basin?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "21460109"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 48
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "meat basin prepare"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "prepare meat basin"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure prepare meat"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 685,
+      "type": "Event Recollection",
+      "question": "What did we do last time the projection screen opened?",
+      "pred": "B",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "12363503"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 55
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "projection screen open"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "open projector"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "screen open pull down"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "projector presentation"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 975,
+      "type": "Entity Log",
+      "question": "What did we have for dinner last time in the courtyard?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "19205400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 37
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "courtyard dinner"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "grilled meat outdoor"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "outdoor dinner",
+            "time_query": "DAY4 00000000 to DAY6 19205400"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 834,
+      "type": "Event Recollection",
+      "question": "Where was the last time you saw strawberries packaged in boxes?",
+      "pred": "B",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "10122406"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 49
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "strawberries box"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "strawberries",
+            "time_query": "DAY3 19000000 to DAY3 20000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "strawberry box",
+            "time_query": "DAY4 00000000 to DAY7 00000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "strawberry box kitchen counter fridge table",
+            "time_query": "DAY3 16000000 to DAY3 20000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 545,
+      "type": "Entity Log",
+      "question": "What did I do the last time I used the knife?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11323407"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 65
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "use knife"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cut vegetable",
+            "time_query": "DAY3 21000000 to DAY3 21200000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I cut",
+            "time_query": "DAY3 21000000 to DAY3 21200000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I",
+            "time_query": "DAY3 21090000 to DAY3 21150000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 723,
+      "type": "Future Plans",
+      "question": "What wines do we plan to need to buy before coming to the grocery store?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15580610"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "wine buy grocery store"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "brandy buy need"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "whiskey need buy"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "whiskey brandy tequila beer buy"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 793,
+      "type": "Entity Log",
+      "question": "What color was the last stuffed toy you held?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "20185305"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 54
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "hold stuffed toy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "blue stuffed toy"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "red doll"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "purple plush"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1130,
+      "type": "Future Plans",
+      "question": "What are we likely to buy with this purchase?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "17391416"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "buy purchase shopping",
+            "time_query": "DAY1 17000000 to DAY1 17391416"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "party supplies buy purchase",
+            "time_query": "DAY1 17300000 to DAY1 17391416"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "hole punch colored pencils buy",
+            "time_query": "DAY1 17350000 to DAY1 17391416"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    }
+  ]
+}

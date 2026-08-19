@@ -1,0 +1,2 @@
+NOTE: A previous attempt failed to produce valid output. Output ONLY a single valid JSON object matching this exact schema, with no extra prose, code fences, or comments:
+  {"groups": [{"indices": [0,1,2,...], "summary": "..."}, ...]}

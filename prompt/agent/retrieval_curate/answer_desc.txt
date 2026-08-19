@@ -1,0 +1,5 @@
+trigger the final QA step; the
+                                              harness feeds your curated captions
+                                              to the QA model and records the
+                                              answer. Call ONLY after
+                                              curate_evidence.

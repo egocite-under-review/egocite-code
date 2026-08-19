@@ -1,0 +1,5 @@
+3. After each search, assess whether the current working memory already
+   provides SUFFICIENT evidence to confidently distinguish between the choices.
+   If YES — stop searching, call `answer()` immediately.
+   Do NOT keep searching out of habit or thoroughness if the answer is already
+   clear. Extra searches waste budget and risk overwriting good evidence.

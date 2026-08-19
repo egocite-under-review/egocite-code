@@ -1,0 +1,1318 @@
+{
+  "accuracy": 60.0,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 139,
+      "type": "RelationMap",
+      "question": "Who was beside me helping the last time I washed dishes?",
+      "pred": "D",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21080700"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 66
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "wash dishes",
+            "time_query": "DAY1 00000000 to DAY2 21080700"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "wash dishes sink",
+            "time_query": "DAY2 20500000 to DAY2 21080700"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia beside sink",
+            "time_query": "DAY2 21050000 to DAY2 21080700"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice kitchen",
+            "time_query": "DAY2 21050000 to DAY2 21080700"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "type": "RelationMap",
+      "question": "Who did Tasha take off the headphones for yesterday?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "12454203"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 43
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha take off headphones",
+            "time_query": "DAY1 00000000 to DAY1 23595900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Tasha headphones earphones",
+            "time_query": "DAY1 00000000 to DAY1 23595900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "I name Jake Katrina Lucia Shure",
+            "time_query": "DAY1 00000000 to DAY1 23595900"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha remove headphones person",
+            "time_query": "DAY1 00000000 to DAY1 23595900"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 333,
+      "type": "EventRecall",
+      "question": "Now that I have walked to the garbage pile by the gate, what changes are there in the surroundings compared to the last time I came here to throw out the trash?",
+      "pred": "C",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11225900"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 62
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "garbage pile gate",
+            "time_query": "DAY5 11200000 to DAY5 11300000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "garbage pile gate",
+            "time_query": "DAY5 11200000 to DAY5 11300000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "walk garbage",
+            "time_query": "DAY5 11200000 to DAY5 11300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "rain thunder",
+            "time_query": "DAY5 11200000 to DAY5 11300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "rain weather",
+            "time_query": "DAY5 11000000 to DAY5 12000000"
+          },
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 383,
+      "type": "EntityLog",
+      "question": "Who bought the blueberries?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "18402915"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "blueberries buy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "blueberries pay checkout"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "shopping blueberries",
+            "time_query": "DAY5 16000000 to DAY5 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "blueberries buy purchase pay",
+            "time_query": "DAY5 16000000 to DAY5 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 427,
+      "type": "RelationMap",
+      "question": "Who prepared the box containing food in Choiszt's hand?",
+      "pred": "C",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "12491005"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 71
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Choiszt hold food box"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "prepare food box"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure prepare food"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "box food DAY2",
+            "time_query": "DAY2 13000000 to DAY2 14000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 390,
+      "type": "EventRecall",
+      "question": "When was the last time I saw Jack drinking a beverage?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "20071404"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jack drink beverage"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jack drink",
+            "time_query": "DAY5 16300000 to DAY5 20071404"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jack sip cup water",
+            "time_query": "DAY5 18000000 to DAY5 20071404"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 410,
+      "type": "EntityLog",
+      "question": "I picked up a white power bank in Shure's room. When was the last time this power bank was charged?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "10025409"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 68
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pick up white power bank"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "charge power bank"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "white power bank Shure room"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "white power bank charge"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "type": "EntityLog",
+      "question": "When was the last time Choiszt played the piano?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "18153012"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 55
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Choiszt play piano"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Choiszt piano"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "play piano"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Choiszt piano"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "EntityLog",
+      "question": "Where was the small clapperboard on the table placed before?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "11351911"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 56
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "clapperboard table"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "clapperboard place"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "clapperboard"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "upstairs room pick up clapperboard",
+            "time_query": "DAY1 11200000 to DAY1 11250000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "type": "RelationMap",
+      "question": "Who joined the conversation when I was chatting with Tasha and Lucia",
+      "pred": "D",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21443307"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha Lucia chat"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha Lucia emoji internet",
+            "time_query": "DAY1 20300000 to DAY1 21000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha Lucia living room",
+            "time_query": "DAY1 20300000 to DAY1 21000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha Lucia living room chat",
+            "time_query": "DAY1 20250000 to DAY1 20450000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 385,
+      "type": "EntityLog",
+      "question": "Who bought the chips on the table?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "18460210"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 62
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "chips table"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "buy chips"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "buy snack"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha buy chip"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "TaskMaster",
+      "question": "What other drinks are needed to mix with rum?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "17210410"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 49
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "rum mix drinks"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "rum Yakult coconut milk"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "rum drink mix"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "rum Yakult"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "type": "TaskMaster",
+      "question": "What else do I need to purchase for delivery?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "11151710"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "purchase delivery buy",
+            "time_query": "DAY2 11000000 to DAY2 12000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "order supplies items",
+            "time_query": "DAY2 10400000 to DAY2 11200000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pens rum poster",
+            "time_query": "DAY2 10400000 to DAY2 11300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "ice cube mold clock puncher",
+            "time_query": "DAY2 10400000 to DAY2 11300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "type": "HabitInsight",
+      "question": "Among us, who doesn't like eating durian",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "22110505"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 53
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "durian like dislike eat"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "durian"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "durian"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia dislike durian"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 251,
+      "type": "TaskMaster",
+      "question": "What is Katrina's room decoration plan?",
+      "pred": "C",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11014017"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 21
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina room decoration"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina murals dolls"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina flowers night light"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina night light"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "EntityLog",
+      "question": "Who was the first to mention the century eggs we need to buy?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "17324907"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "century eggs buy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "century eggs",
+            "time_query": "DAY1 13500000 to DAY1 14100000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 453,
+      "type": "EventRecall",
+      "question": "Why did I ask Tasha to go upstairs with me?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "20000512"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 63
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha go upstairs"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha go upstairs help"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha help upstairs plug cord clean",
+            "time_query": "DAY6 19000000 to DAY6 20000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha help negotiate upstairs downstairs",
+            "time_query": "DAY6 19400000 to DAY6 19550000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 464,
+      "type": "RelationMap",
+      "question": "When I asked how many minutes until the desserts could be taken up, who answered me?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "21044824"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dessert minutes take up",
+            "time_query": "DAY6 20000000 to DAY6 21044824"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dessert when serve minutes",
+            "time_query": "DAY6 15000000 to DAY6 21044824"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "minutes bring dessert upstairs",
+            "time_query": "DAY6 15000000 to DAY6 21044824"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "dessert minutes take upstairs",
+            "time_query": "DAY6 15400000 to DAY6 16100000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "RelationMap",
+      "question": "This morning during our discussion, which two people did I remind not to let their hair cover their glasses?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "12285913"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 51
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "hair cover glasses reminder",
+            "time_query": "DAY1 08000000 to DAY1 12285913"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "hair cover glasses",
+            "time_query": "DAY1 08000000 to DAY1 12285913"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "remind hair glasses",
+            "time_query": "DAY1 08000000 to DAY1 12285913"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure hair glasses",
+            "time_query": "DAY1 08000000 to DAY1 12285913"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "type": "EntityLog",
+      "question": "When was the last time eggs were bought?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16441707"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "buy eggs"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "buy eggs",
+            "time_query": "DAY2 00000000 to DAY3 16441707"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "eggs shopping",
+            "time_query": "DAY2 00000000 to DAY3 16441707"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy eggs purchase",
+            "time_query": "DAY2 00000000 to DAY3 16441707"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 279,
+      "type": "HabitInsight",
+      "question": "What do I usually do when ordering takeout?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12481103"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 36
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "order takeout food delivery"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "takeout review rating opinion recommendation"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Meituan app good review recommend"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I order takeout review"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 467,
+      "type": "RelationMap",
+      "question": "Who didn't participate while we were playing below?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "21044827"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 52
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "playing below"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "play game downstairs"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "downstairs play",
+            "time_query": "DAY6 19240000 to DAY6 21044827"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "play downstairs",
+            "time_query": "DAY6 19200000 to DAY6 21044827"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "type": "TaskMaster",
+      "question": "How long should the self-introduction and quiz session take approximately?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19473405"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 22
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "self-introduction quiz session time"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "self introduction time duration"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "quiz session minutes"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "self introduction quiz event"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 307,
+      "type": "TaskMaster",
+      "question": "What do we plan to eat for lunch?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "18242219"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 17
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "lunch eat plan",
+            "time_query": "DAY4 11000000 to DAY4 14000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "burger pizza chicken pot",
+            "time_query": "DAY4 11000000 to DAY4 14000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 355,
+      "type": "TaskMaster",
+      "question": "What fruit are we planning to buy?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "16080504"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 26
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy fruit plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pineapple buy plan"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "watermelon buy"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "blueberry buy"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    }
+  ]
+}

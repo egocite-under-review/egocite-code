@@ -1,0 +1,23 @@
+# Conda environment for EgoCITE.
+#
+#   conda env create -f environment.yml
+#   conda activate egocite
+#
+# Trimmed to what EgoCITE actually imports. ffmpeg is included because
+# src/preprocess/caption_video.py shells out to ffmpeg/ffprobe.
+#
+# GPU note: the pip section installs the default (CPU) torch that
+# sentence-transformers depends on. For CUDA embeddings, install torch from
+# https://pytorch.org first — developed against torch 2.8.0+cu128 — or swap
+# faiss-cpu for faiss-gpu.
+name: egocite
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - ffmpeg                      # caption_video.py: frame extraction + ffprobe
+  - pip
+  - pip:
+      - -r requirements.txt

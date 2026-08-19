@@ -1,0 +1,1253 @@
+{
+  "accuracy": 76.0,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 1,
+      "type": "EntityLog",
+      "question": "What's the story behind the jellyfish lamp they're talking about making?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12214500"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 14
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "jellyfish lamp making"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "jellyfish lamp childhood memory"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EntityLog",
+      "question": "When did they buy the blueberries they found in the fridge?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "18093400"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 44
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "blueberries fridge"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "buy blueberries order"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "blueberries online order Hema"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Hema shopping fruit",
+            "time_query": "DAY1 17000000 to DAY1 20000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "EntityLog",
+      "question": "What were they planning to use the mangoes for?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "18102300"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "mango plan use"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "mango juice dessert rice"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "mango"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "EntityLog",
+      "question": "Where did they get the pink Champagne they're enjoying?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "22111900"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 47
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pink Champagne"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pink Champagne"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "supermarket wine",
+            "time_query": "DAY3 16000000 to DAY3 19000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "bar liquor store",
+            "time_query": "DAY3 12000000 to DAY3 22000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "EntityLog",
+      "question": "What's the story behind the little dog craft they made?",
+      "pred": "B",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11362800"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 27
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "make little dog craft"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dog craft story",
+            "time_query": "DAY4 12000000 to DAY4 19000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dog pet childhood memory",
+            "time_query": "DAY4 12000000 to DAY4 19000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cartoon character dog",
+            "time_query": "DAY4 12000000 to DAY4 19000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "EntityLog",
+      "question": "What were they planning to do with the pressed flowers?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11495600"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 10
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pressed flowers plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pressed flowers bookmark"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "EntityLog",
+      "question": "What supplies did they originally plan to get for grilling?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15121400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "grilling supplies plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "barbecue charcoal skewers meat",
+            "time_query": "DAY1 11520000 to DAY1 11560000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "barbecue supplies charcoal skewers",
+            "time_query": "DAY1 11520000 to DAY1 11560000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "EntityLog",
+      "question": "Why are they particularly interested in buying chicken wings?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16394800"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "chicken wings buy purchase"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "chicken wings barbecue BBQ"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "chicken wing wings"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "chicken wings buy"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "EntityLog",
+      "question": "What made them complain about the B&B staff's attitude?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "10385600"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 32
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "complain B&B staff attitude"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "B&B staff complaint"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "maintenance issue response"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "extra towel request"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "type": "EntityLog",
+      "question": "Why did Shure ask about the Shaanxi dialect?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "10400400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 51
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure Shaanxi dialect"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure accent Shaanxi"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure ask Shaanxi dialect"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure ask accent speech"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "EntityLog",
+      "question": "Why were they always struggling to find scissors?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "10503800"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 48
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "scissors struggle find"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "scissors label identify"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "scissors find where"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "scissors label name identify"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "type": "EntityLog",
+      "question": "What materials had I been waiting for?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "11061000"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "waiting materials beads thread"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "waiting for beads"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "beads thread waiting"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "beads thread package"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "EntityLog",
+      "question": "What had I said about my parents' preferences for keeping the house?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "11212900"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 31
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "parents house preference decoration"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "parents clean messy simple"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "I parents home preference"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "my parents like dislike"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "EntityLog",
+      "question": "What flower activity had I been interested in trying?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "11394800"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 10
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "flower arrange plant press dry"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 1
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "type": "EntityLog",
+      "question": "What was the system they'd set up with the 'ego coins'?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "16150700"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "ego coins system"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "ego coins"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "hide coins"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "ego coins"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "EntityLog",
+      "question": "Why was Tasha separating egg whites from yolks so carefully?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19523900"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha separate egg white yolk"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha egg white yolk dessert"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha Barquillo"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha tart tiramisu dessert"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "EntityLog",
+      "question": "What dessert were they planning to decorate with the piping bag?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "21342900"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "piping bag"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "piping bag cake dessert"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cupcake decorate piping"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "chocolate cake cheesecake tart"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "EntityLog",
+      "question": "What previous conversation might have inspired Alice's plan to live in Dali?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "11074300"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice Dali live plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Dali lifestyle peaceful"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice Dali"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice Dali",
+            "time_query": "DAY4 12000000 to DAY4 13000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "EntityLog",
+      "question": "Where did the steak they were cooking come from?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "20105700"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 48
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cooking steak"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "steak delivery order online",
+            "time_query": "DAY5 20000000 to DAY5 20100000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "steak delivery order",
+            "time_query": "DAY5 20000000 to DAY5 20100000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "steak burger order together",
+            "time_query": "DAY5 18300000 to DAY5 18500000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "type": "EntityLog",
+      "question": "Had they encountered Huawei earlier in the day?",
+      "pred": "D",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "19455500"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Huawei tech company",
+            "time_query": "DAY5 00000000 to DAY5 19455500"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Huawei store shopping",
+            "time_query": "DAY5 00000000 to DAY5 19455500"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Huawei store",
+            "time_query": "DAY5 15000000 to DAY5 16300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tech company electronics favorite",
+            "time_query": "DAY5 00000000 to DAY5 15000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "EntityLog",
+      "question": "Had they mentioned buying a bird figurine before?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "18551800"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 28
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "bird figurine purchase"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "toy store bird"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Disney plush toy"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jellycat plush"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "EntityLog",
+      "question": "Had they talked about douzhi before?",
+      "pred": "D",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "16281300"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 60
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "douzhi drink"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "douzhi"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "douzhi"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure douzhi"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "EntityLog",
+      "question": "Why are they excited about the peonies blooming?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11425500"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "peony bloom flower"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "peony wait bloom purchase"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "peony bloom flower"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "peony wait long time"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "EntityLog",
+      "question": "How long does it typically take for pressed flowers to be ready?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "11500600"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pressed flower time ready"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "flower press day duration"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pressed flower ready day"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "EntityLog",
+      "question": "What had they discussed before about playing piano?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "12480900"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "piano play discussion"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "piano keyboard instrument"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "piano room schedule"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pianqin keyboard brand"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    }
+  ]
+}

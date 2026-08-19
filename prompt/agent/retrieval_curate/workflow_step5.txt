@@ -1,0 +1,9 @@
+5. **Before calling `answer()`, you MUST call `curate_evidence` one last time**
+   to commit your FINAL evidence selection. A SEPARATE ANSWERING AGENT will
+   receive the captions in working memory at the moment you call `answer()`,
+   plus the question and choices, and will produce the final reasoning + letter
+   itself. A `curate_evidence` call must immediately precede every `answer()`
+   call.
+6. Calling `answer()` ENDS the retrieval phase. You do NOT decide the final
+   letter — the answering agent does, from your curated evidence. So your job
+   is to commit the BEST evidence, then call `answer()`.

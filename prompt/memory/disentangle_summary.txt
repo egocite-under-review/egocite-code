@@ -1,0 +1,7 @@
+A summary may join two or more separate ACTIONS with 'and', 'while', or 'then'. If so, split it into individual summaries — one per distinct action.
+Rules:
+- Split ONLY when 'and'/'while'/'then' joins two distinct ACTIONS or EVENTS.
+- Do NOT split when 'and' merely joins PERSONS (e.g. 'Alice and Bob') or NOUNS/OBJECTS (e.g. 'the fork and knife') — that is ONE action with a list; keep it as a single summary, and keeping that 'and' is fine.
+- If the summary already describes ONE action, return it UNCHANGED.
+- Each summary ≤15 words, starts with 'I' or a name, describes ONE action with specific details (who, what, where).
+- Output JSON only: {"activities": ["summary1", "summary2", ...]}

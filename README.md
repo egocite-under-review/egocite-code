@@ -1,0 +1,145 @@
+# EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory
+
+Anonymous code release for review. EgoCITE is an agentic memory framework for
+egocentric QA, evaluated on EgoLifeQA, EgoMem, and Ego-R1-Bench.
+
+| Component | What it does |
+|---|---|
+| `EgoScheme` | uses local multimodal context to turn fragmentary video captions and speech transcripts into self-contained atomic memory indices |
+| `EgoIndex` | organizes action, activity, utterance, and conversation representations into searchable multi-view memory indices |
+| `EgoRetrv` | combines semantic search with question-conditioned temporal relevance scoring and curation of retrieved evidence |
+
+## 1. Install
+
+```bash
+bash install.sh          # creates conda env `egocite` with pinned deps + self-checks
+conda activate egocite
+```
+
+Or manually: `conda env create -f environment.yml`, or
+`pip install -r requirements.txt` into an existing environment.
+**An NVIDIA GPU with `flash-attn` is required** (the embedding model requests
+`flash_attention_2` with no fallback).
+
+## 2. Data
+
+```bash
+bash src/scripts/0-download.sh          # EgoLife, Ego-R1-Data, Ego-R1-Bench from HuggingFace
+export EGOCITE_DATASET=$PWD/dataset
+```
+
+| Key | HuggingFace repo | Lands in |
+|---|---|---|
+| `egolife` | `lmms-lab/EgoLife` | `dataset/EgoLife` |
+| `egolifeqa` | `Ego-R1/Ego-R1-Data` | `dataset/Ego-R1-Data` |
+| `egor1` | `Ego-R1/Ego-R1-Bench` | `dataset/Ego-R1-Bench` |
+
+EgoMem: clone [LifeDialBench](https://github.com/RayNeo-AI-2025/LifeDialBench)
+into `dataset/LifeDialBench`, then copy the normalized file this repo ships:
+
+```bash
+cp dataset/egomem/EgoMem-Normalized.json dataset/LifeDialBench/data/
+```
+
+`EgoMem-Normalized.json` is derived from the upstream release (first-person
+rewrite, `DAY1..DAY8` dates, `HHMMSSFF` times; 939 questions over seven
+histories). See `dataset/README.md`. Regenerate with
+`python src/preprocess/normalize_egomem.py`.
+
+## 3. Preprocess → captions
+
+```bash
+bash src/scripts/1-preprocess_egolife.sh A1_JAKE                  # human dense captions
+bash src/scripts/1-preprocess_egolife.sh --source gemma A1_JAKE   # VLM narrator captions
+```
+
+Writes 30-second multimodal captions to
+`output/captions/{source}/{person}/{person}_captions.json`.
+For a VLM source, caption the video first:
+`python src/preprocess/caption_video.py --person A1_JAKE --model gemma`
+(`--model gemini` uses the Gemini API and needs `GEMINI_API_KEY`; `gemma` uses a
+local vision vLLM server at `VLLM_VISION_BASE_URL`).
+
+## 4. Build the memory
+
+```bash
+bash src/scripts/2-build_memory.sh A1_JAKE
+bash src/scripts/2-build_memory.sh --source gemma --llm-name google/gemma-4-31B-it A1_JAKE
+```
+
+Builds action → activity → conversation views, then `dag.json` (the searchable
+multi-view index), all under `output/memory/{source}/{person}/`. FAISS indices
+are derived caches, rebuilt automatically on first search.
+
+## 5. Evaluate
+
+```bash
+bash src/scripts/3-eval.sh --bench egolifeqa A1_JAKE
+bash src/scripts/3-eval.sh --bench egolifeqa egomem egor1 --all --llm-name gpt
+```
+
+Or run a harness directly:
+
+```bash
+python src/eval/eval_egolifeqa.py --person A1_JAKE --llm-name qwen --n-start 0 --n-end 100000
+python src/eval/eval_egomem.py    --person A1_JAKE --llm-name qwen --all
+python src/eval/eval_egor1.py     --person A1_JAKE --llm-name qwen --benchmark manual
+```
+
+> `--n-end` defaults to **20**; pass `--n-end 100000` for the full question set.
+
+Key flags: `--source` picks the memory, `--llm-name {sonnet,opus,qwen,gpt}`
+picks a `MODEL_CONFIG` block in `src/agent/agent.py`, `--max-rounds` (default 5),
+`--top-k`, `--lambda-action` (per-hour time decay, default 0.99).
+
+Results land in `output/results/{bench}/{source}/`, full traces in
+`output/logs/{bench}/{source}/`. **This repository includes every run log and
+result JSON behind the reported numbers.** Accuracy is per person; a benchmark
+number is the weighted mean over the six wearers. `cap_hit` is the retrieval hit
+rate (retrieved indices overlapping the ground-truth timestamp).
+
+### Scoring a finished run
+
+```bash
+python src/eval/eval_accuracy.py --benchmark egolifeqa --source densecaption --model qwen
+python src/eval/eval_hit.py      --benchmark egolifeqa --source densecaption --model qwen
+```
+
+Both recompute the headline numbers from `output/logs/`; `--per-wearer` adds one
+row per person, `eval_hit.py --tolerance-sec` widens the ground-truth window.
+
+## Layout
+
+```
+EgoCITE/
+├── src/            code: config.py, models/, preprocess/, memory/, agent/, eval/, scripts/
+├── prompt/         all prompt text as .txt — no prompt strings in code
+├── dataset/        inputs (ships with egomem/EgoMem-Normalized.json; rest downloaded)
+└── output/
+    ├── logs/       {bench}/{source}/ — full run traces (included)
+    └── results/    {bench}/{source}/ — per-run result JSONs (included)
+```
+
+The pipeline additionally writes `output/preprocess/`, `output/captions/`, and
+`output/memory/` (large intermediates; regenerated by stages 3–4, not included).
+
+## Configuration
+
+`src/config.py` is the only place a path, key, or service URL is read; every
+setting can be overridden by an environment variable of the same name
+(`EGOCITE_DATASET`, `EGOCITE_OUTPUT`, `EGOCITE_PROMPT`, …). Credentials ship
+empty — export what your backend needs:
+
+| Setting | Used by |
+|---|---|
+| `OPENAI_API_KEY` | `gpt-*`, `o1`, `o3`, `o4` |
+| `ANTHROPIC_API_KEY` | Claude backend |
+| `VLLM_BASE_URL`, `VLLM_VISION_BASE_URL` | local vLLM servers (default `localhost:8001/8002`) |
+| `GEMINI_API_KEY` | `caption_video.py --model gemini` |
+| `HF_TOKEN` | gated dataset repos |
+
+## Notes on reproduction
+
+- The full question set needs `--n-start 0 --n-end 100000` (`--n-end` defaults to 20).
+- Default retrieval budget: 5 rounds, 15 memory indices — the same budget given to every baseline.
+- Agents are LLM-driven, so per-question outcomes vary slightly between runs; aggregate accuracy is stable to well under a point.

@@ -1,0 +1,1207 @@
+{
+  "accuracy": 64.0,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 1004,
+      "type": "TaskMaster",
+      "question": "Why was the dance we had previously planned to schedule on Day 6 canceled, and which is incorrect regarding the reason?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "21573907"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 31
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance Day 6 cancel"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Day 6 cancel maintenance equipment"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance cancel reason"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "dance cancel Day 6"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 501,
+      "type": "Entity Log",
+      "question": "What am I assembling the first time I assemble something?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "17091712"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 59
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "assemble"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "assemble hard drive"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "assemble keyboard"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "assemble computer"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 951,
+      "type": "HabitInsight",
+      "question": "What kind of room did Shure say he didn't like?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "17503300"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 36
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure don't like room"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure dislike minimalist room"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure room style dislike",
+            "time_query": "DAY6 17400000 to DAY6 17550000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure flashy style room",
+            "time_query": "DAY5 22450000 to DAY5 22550000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1026,
+      "type": "HabitInsight",
+      "question": "What am I used to taking to clean the dishes every time?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21303613"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 73
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "clean dishes"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "dish brush"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "sponge"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "towel"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1033,
+      "type": "HabitInsight",
+      "question": "Who mentioned that she only drinks plain yogurt?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16584817"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 39
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "plain yogurt drink"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "yogurt"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "only drink yogurt"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "yogurt drink plain"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1095,
+      "type": "RelationMap",
+      "question": "Which ones of you and I were discussing Kapybara after lunch yesterday?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "18075207"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Kapybara discussion",
+            "time_query": "DAY6 12000000 to DAY6 18000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "capybara",
+            "time_query": "DAY6 12000000 to DAY6 23595900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Kapybara"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "capybara",
+            "time_query": "DAY6 12000000 to DAY6 23595900"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "Future Plan",
+      "question": "What other drinks are needed to mix with rum?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "17324615"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 31
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "rum mix drink juice"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "rum pineapple orange lemon coconut juice"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "rum juice mixer drink",
+            "time_query": "DAY1 17200000 to DAY1 17350000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "type": "Entity Log",
+      "question": "Who wrote the last word on the whiteboard?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "22003012"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 27
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "write whiteboard"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "whiteboard",
+            "time_query": "DAY1 14000000 to DAY1 22003012"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "write whiteboard",
+            "time_query": "DAY2 00000000 to DAY7 23595900"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "whiteboard",
+            "time_query": "DAY1 13553000 to DAY1 22003012"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "type": "Entity Log",
+      "question": "Who put the coffee in the bag last time?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "10521117"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "put coffee bag"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice coffee bag"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 301,
+      "type": "Interpersonal Relationships",
+      "question": "Who did we want to perform a talent show last time?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "15015312"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 29
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "talent show performance"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "want talent show"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure join performance"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "perform talent show who"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 369,
+      "type": "Event Recollection",
+      "question": "When was the last time I used cling film?",
+      "pred": "C",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "19590503"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cling film"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "wrap plastic"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cling film",
+            "time_query": "DAY2 13000000 to DAY3 19590503"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "plastic wrap",
+            "time_query": "DAY2 13000000 to DAY3 19590503"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "type": "Entity Log",
+      "question": "What did I throw into the trash can last time?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17412900"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 49
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "throw trash can",
+            "time_query": "DAY1 00000000 to DAY2 17412900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "throw banana peel",
+            "time_query": "DAY1 00000000 to DAY2 17412900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "throw apple orange banana",
+            "time_query": "DAY2 12580000 to DAY2 17412900"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "type": "Future Plan",
+      "question": "What activities do we have after sweeping the room?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "22305908"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 43
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "sweep room"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "sweep room"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "time_query": "DAY2 22182800 to DAY2 23000000",
+            "query": "room"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "time_query": "DAY2 22200000 to DAY2 23000000",
+            "query": ""
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "type": "Future Plan",
+      "question": "What activities can we hold in Shure's room?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "11335114"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 29
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Shure room"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure room activity"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "karaoke Shure"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "board game Shure room"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 566,
+      "type": "Entity Log",
+      "question": "What did I last put in the microwave?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15014105"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "put microwave",
+            "time_query": "DAY1 00000000 to DAY5 15014105"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "microwave food",
+            "time_query": "DAY3 12190000 to DAY5 15014105"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 571,
+      "type": "Event Memory",
+      "question": "Who was eating strawberries last time?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15105113"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 66
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "eat strawberries"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "eat strawberries"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice eat strawberry"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake eat strawberry"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 576,
+      "type": "Entity Log",
+      "question": "Who purchased the limes?",
+      "pred": "C",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15131908"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 32
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "purchase lime"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "buy lime"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina buy lime"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "type": "Entity Log",
+      "question": "What's inside the gift box?",
+      "pred": "A",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12375515"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "gift box open"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "gift box earrings necklace ring bracelet"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 318,
+      "type": "Entity Log",
+      "question": "Who buys the coins we use to play the game?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16290501"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 48
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "coins game buy purchase"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "buy coins tokens arcade",
+            "time_query": "DAY3 15450000 to DAY3 16000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake pay purchase coins",
+            "time_query": "DAY3 15450000 to DAY3 16000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 919,
+      "type": "TaskMaster",
+      "question": "What else might I have to do later?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "19223000"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 26
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "package delivery",
+            "time_query": "DAY5 19000000 to DAY5 20000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "package pickup later",
+            "time_query": "DAY5 18300000 to DAY5 19300000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "fetch package later",
+            "time_query": "DAY5 19000000 to DAY5 20000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "water plants meeting mailbox",
+            "time_query": "DAY5 19000000 to DAY5 20000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 959,
+      "type": "HabitInsight",
+      "question": "What are my favorite colors to use when decorating a room?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY6",
+        "time": "14512407"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 12
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "favorite color decorate room"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "green lavender red room decoration"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 981,
+      "type": "TaskMaster",
+      "question": "What are these flowers going to be used for?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19224910"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 0
+      },
+      "trace": []
+    },
+    {
+      "id": 988,
+      "type": "TaskMaster",
+      "question": "What am I going to do with my gloves on the first day?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12012516"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "gloves",
+            "time_query": "DAY1 00000000 to DAY1 23595900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "bake cake cupcake",
+            "time_query": "DAY1 19000000 to DAY1 22000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cotton gloves decorate",
+            "time_query": "DAY1 21300000 to DAY1 21500000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 997,
+      "type": "TaskMaster",
+      "question": "What was I going to use a wisteria leaf for when I picked it on my last outing?",
+      "pred": "B",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "19000205"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 43
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pick wisteria leaf"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "wisteria leaf use"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "wisteria leaf pick",
+            "time_query": "DAY4 16000000 to DAY4 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "wisteria specimen bookmark",
+            "time_query": "DAY4 15000000 to DAY4 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "type": "TaskMaster",
+      "question": "What role might Shure take on at the party event on Day 6?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15113109"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure party event Day 6",
+            "time_query": "DAY5 15000000 to DAY7 23595999"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure auction host moderator speaker",
+            "time_query": "DAY4 22000000 to DAY5 15113109"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure auctioneer auction",
+            "time_query": "DAY4 22000000 to DAY5 15113109"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    }
+  ]
+}

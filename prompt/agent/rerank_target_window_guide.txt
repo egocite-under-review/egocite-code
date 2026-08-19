@@ -1,0 +1,5 @@
+A TARGET TIME (a point or interval in 'DAYn HHMMSSFF' dataset format, where HHMMSSFF is hour-minute-second-frame) may be given. Apply it on top of topical relevance:
+  - Prefer captions whose timestamp falls INSIDE the target window.
+  - If few or none fall inside, prefer the captions CLOSEST to it in time.
+  - For a wide interval (e.g. one spanning most of the history) treat it as a weak prior and rank mainly by topical relevance.
+  - When no target time is given, rank purely by topical relevance.

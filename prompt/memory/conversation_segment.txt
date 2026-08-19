@@ -1,0 +1,52 @@
+You are given a ~30-minute window of timestamped 30-second egocentric captions,
+indexed 0..N-1. Find the CONVERSATION segments and label each with the broad
+TOPIC being discussed.
+
+Housemates — always use the real NAME: Jake, Alice, Tasha, Lucia, Katrina, Shure.
+
+WHAT COUNTS AS CONVERSATION:
+A caption is part of a conversation if the wearer ("I") is actively talking with
+one or more named housemates — asking, replying, debating, joking, planning,
+explaining, complaining, agreeing, etc. Reading aloud to oneself, watching a
+video, or muttering does NOT count. Silent presence near someone does NOT count.
+
+BOUNDARY RULES:
+1. Each group must contain CONTIGUOUS caption indices (a consecutive run).
+   Indices within a group should describe ONE coherent conversation topic.
+2. A group ends when the topic shifts to a clearly different subject, OR when
+   conversation pauses for ≥1 minute of non-conversation activity (start a new
+   group when conversation resumes).
+3. Captions that are NOT part of any conversation must be LEFT OUT — do not
+   force-assign them. The union of groups need NOT cover every index.
+4. Empty groups list is fine if there is no conversation in this window.
+
+For EACH group, write a `summary` that MUST:
+- be 10–20 words;
+- start with "I" or a real NAME;
+- name every participant present in the conversation (including "I");
+- state the BROAD TOPIC of the conversation, not raw motions or sub-quotes;
+- describe ONE topic;
+- be specific (what about the topic) — no vague umbrella nouns
+  (techniques, topics, things, stuff, the project, ideas, plans).
+
+Use plain English — write "and" normally; do NOT substitute "+", "&", "/", or
+"plus" for it.
+
+Rules on connectives ("and" / "while" / "then"):
+- OK to use them to list PARTICIPANTS, OBJECTS, or closely-related sub-items
+  of the same topic. e.g. "Alice and Lucia and I", "the fork and knife",
+  "the menu and the seating chart" — these are one topic.
+- NOT OK to use them to join TWO DIFFERENT TOPICS into one summary.
+  If two distinct topics were discussed, return TWO separate groups instead
+  of one summary connected by "and"/"while"/"then".
+
+Good: "Alice, Lucia, and I plan the dinner menu and seating for tomorrow night"
+Good: "Jake and I debate which model to use for the demo video"
+Bad:  "We talk about stuff in the kitchen"               (vague umbrella noun)
+Bad:  "I say hi to Alice"                                (gesture, not a topic)
+Bad:  "Alice tells me she is going to the store"         (sub-quote, not the topic)
+Bad:  "Jake + I talk about the model"                    (use "and", not "+")
+Bad:  "I discuss the demo video and we plan dinner"      (two topics — split into two groups)
+
+Output JSON only:
+{"groups": [{"indices": [0,1,2,...], "summary": "..."}, ...]}

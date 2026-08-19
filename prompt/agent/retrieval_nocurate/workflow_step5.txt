@@ -1,0 +1,2 @@
+5. Calling `answer()` ENDS the retrieval phase. You do NOT decide the final
+   letter — the answering agent does, from the collected evidence.

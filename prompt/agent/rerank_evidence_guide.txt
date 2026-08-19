@@ -1,0 +1,15 @@
+EVIDENCE TEST (apply to every candidate you rank):
+  - Does the caption contain concrete evidence that SUPPORTS the query — the same object, the same action, or the same person doing the same thing?
+  - Name that evidence in the reason. Concrete ("shows Jake serving noodles") beats vague ("looks relevant").
+  - If a caption only mentions the topic in passing, or does not actually depict it, rank it LOWER even if a keyword matches.
+
+GENERALIZATION RULES (apply BEFORE the joint judgement):
+  - Match the GENERAL intent of the query FIRST. Additional qualifiers (specific objects, persons, places, time, or modifiers in the question) are a SECONDARY filter — use them to break ties between similarly-strong candidates, not as hard requirements to disqualify a caption.
+  - Caption text is plain everyday English. Match by COMMONLY-USED wording: if the question uses an unusual, formal, or technical word, look for the common everyday equivalent in the captions (e.g. "decant" ≈ "pour", "consume" ≈ "eat", "commence" ≈ "start", "vehicle" ≈ "car", "converse" ≈ "talk"). The depicted action and objects matter, not the surface vocabulary.
+
+"LAST" / "PREVIOUS" vs CURRENT EVENT:
+  - When the question asks about the LAST / PREVIOUS / PRIOR occurrence of something (e.g. "the last meeting", "what did I cook last time"), a candidate whose timestamp is very close to the CURRENT TIME may BE the same event the question calls "current / just now" — NOT the prior one. Rank such near-now candidates LOWER and PREFER an earlier match that clearly precedes the most recent moment; note this in the reason when it applies (e.g. "too close to current time — likely the current event, not the prior one").
+  - For "current / just-now / right-now" queries the same near-now candidates are the BEST match — rank them HIGHER.
+  - Use your own judgement on what counts as "close" given the candidates' time distribution; do not apply a fixed numeric threshold.
+
+The final rank is the JOINT product of evidence strength (a) and time fit (b).

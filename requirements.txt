@@ -1,0 +1,40 @@
+# EgoCITE dependencies — versions are the ones this project was developed and
+# verified against. Loosen the pins if you need to.
+#
+#   pip install -r requirements.txt
+#
+# torch is NOT listed: sentence-transformers pulls it in, and the right build
+# depends on your CUDA version. Install it first from https://pytorch.org if you
+# want GPU embeddings (developed against torch 2.8.0+cu128).
+
+# --- memory construction ---------------------------------------------------
+python-igraph==1.0.0            # the episodic DAG
+pydantic==2.12.5                # LLM output schemas
+numpy==2.4.3
+tqdm==4.67.3
+pqdm==0.2.0                     # threaded map with a progress bar
+
+# --- retrieval -------------------------------------------------------------
+faiss-cpu==1.13.2               # swap for faiss-gpu if you have it
+sentence-transformers==5.3.0    # embedding model (pulls in torch)
+accelerate==1.13.0              # required by device_map="auto" in EmbeddingModel;
+                                # without it every search fails to load the model
+# flash-attn is REQUIRED (EmbeddingModel asks for flash_attention_2 with no
+# fallback) but platform-specific, so it cannot be pinned here.
+# install.sh fetches the prebuilt wheel matching cu128 / torch 2.8 / cp312:
+#   pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu128torch2.8-cp312-cp312-linux_x86_64.whl
+# Without it every retrieval fails: the model will not load at all.
+
+# --- LLM backends ----------------------------------------------------------
+openai==2.30.0                  # OpenAI, Codex/LiteLLM proxy, local vLLM
+anthropic==0.115.1              # Claude
+google-genai==2.16.0            # Gemini batch (video captioning only)
+tenacity==9.1.4                 # retries
+pillow==11.3.0                  # image parts in multimodal messages
+
+# --- preprocessing ---------------------------------------------------------
+pandas==3.0.2                   # caption/transcript alignment
+pysrt==1.1.2                    # EgoLife SRT parsing
+
+# --- dataset download ------------------------------------------------------
+huggingface_hub==0.36.2

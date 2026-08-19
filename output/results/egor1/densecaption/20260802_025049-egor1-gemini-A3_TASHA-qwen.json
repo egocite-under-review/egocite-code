@@ -1,0 +1,1280 @@
+{
+  "accuracy": 80.0,
+  "n": 25,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 1,
+      "type": "EntityLog",
+      "question": "What plans did they make earlier about providing drinks for their event?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "11442800"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 55
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "drinks event plans"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "soft drinks lemonade iced tea"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "coffee drinks plan event"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "mineral water drink event"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "EntityLog",
+      "question": "Who had offered to make coffee for everyone earlier?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12041900-12003000"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "make coffee everyone offer",
+            "time_query": "DAY3 00000000 to DAY3 12041900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "offer make coffee everyone",
+            "time_query": "DAY3 00000000 to DAY3 12041900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EntityLog",
+      "question": "How much is the tissue?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12055800"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tissue price cost money"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tissue buy purchase"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "tissue"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tissue 9.9 5.5 3.3 15"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "EntityLog",
+      "question": "What was the butler supposed to do for them?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12161000"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 18
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "butler organize arrange deliver manage"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "butler bring packages parcels delivery",
+            "time_query": "DAY1 12500000 to DAY1 13000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "EntityLog",
+      "question": "Why are they concerned about battery levels dropping below 10%?",
+      "pred": "C",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12192000"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 37
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "battery level 10 percent"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "battery low shutdown critical"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "battery 10 percent data loss"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "battery level below 10 percent"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "battery shutdown automatic critical task"
+          },
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "EntityLog",
+      "question": "What other DIY activities did Lucia suggest before deciding on handmade earrings?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12292000"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia DIY handmade earrings suggestion",
+            "time_query": "DAY1 00000000 to DAY7 23590000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Lucia handmade earrings craft jewelry",
+            "time_query": "DAY1 00000000 to DAY7 23590000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "earrings jewelry make craft",
+            "time_query": "DAY1 00000000 to DAY7 23590000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia earrings handmade suggest",
+            "time_query": "DAY1 00000000 to DAY7 23590000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "EntityLog",
+      "question": "What problem did they anticipate with dancing while wearing the recording glasses?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "15001600"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dancing glasses fall off"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "glasses dancing problem"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "glasses fall off dancing"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "glasses fall off dance"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "EntityLog",
+      "question": "What exactly are these 'planting packages' they're talking about?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "12241400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "planting package"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "seed paper card"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "seed paper"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "hydroponics kit greenhouse pot herb"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "EntityLog",
+      "question": "What cooking activity involving sticks did they plan initially before changing their minds?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16392800-15300000"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 47
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cooking sticks plan change mind"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "barbecue BBQ grill skewer"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cotton candy chocolate fondue dessert"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "stick skewer kabob grill"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "EntityLog",
+      "question": "Why do they need to clean up the rooms?",
+      "pred": "D",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY4",
+        "time": "11525100"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 47
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "clean room reason",
+            "time_query": "DAY4 11000000 to DAY4 12300000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "guest dinner photo scan",
+            "time_query": "DAY4 11000000 to DAY4 12300000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "iPhone scan room photo",
+            "time_query": "DAY4 11000000 to DAY4 12300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake clean room iPhone",
+            "time_query": "DAY4 11300000 to DAY4 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "EntityLog",
+      "question": "Why is the mention of admiring peonies particularly relevant to them right now?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12052400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 32
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "admire peony flower",
+            "time_query": "DAY4 12000000 to DAY4 13000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "peony gift receive",
+            "time_query": "DAY4 11000000 to DAY4 13000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Earth Day flower peony",
+            "time_query": "DAY4 11000000 to DAY4 13000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "peony receive gift today",
+            "time_query": "DAY4 08000000 to DAY4 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "EntityLog",
+      "question": "Did they have scissors somewhere in the house?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12184200"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 20
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "scissors"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 1
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "EntityLog",
+      "question": "How did they come up with the idea for a dessert display in the first place?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12211800"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 23
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dessert display idea"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina suggest dessert afternoon tea"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake cooking show afternoon tea"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dessert display suggest idea"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "EntityLog",
+      "question": "Have they used SF Express for quick deliveries before?",
+      "pred": "C",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12455000"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 47
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "SF Express delivery courier"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "SF Express Shunfeng"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "SF Express Shunfeng delivery"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha room decoration Taobao"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "EntityLog",
+      "question": "Why is Katrina suggesting David Tao's music?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "12551200"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina David Tao music"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "David Tao"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Katrina suggest song lyrics"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Katrina David Tao"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "type": "EntityLog",
+      "question": "Where did the idea for a dance performance come from?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY4",
+        "time": "13025900"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 25
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance performance idea"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake suggest dance"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance proposal suggest"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "dance performance"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "EntityLog",
+      "question": "When did they buy the coconut water?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "13275300"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "coconut water buy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "supermarket shopping",
+            "time_query": "DAY1 17000000 to DAY1 18000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "coconut water online order delivery"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "EntityLog",
+      "question": "What illness did Xie Binzhu have before his fever got so high?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "12145700"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Xie Binzhu illness fever"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Xie Binzhu"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Xie Binzhu fever"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Xie Binzhu cold cough"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "EntityLog",
+      "question": "Where did the string of little flags come from?",
+      "pred": "B",
+      "answer": "B",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "12165500"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 43
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "string of little flags"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "flags package delivery"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha flags package"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha flag"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "type": "EntityLog",
+      "question": "Why do I specifically ask for a bag?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "13442800"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 65
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "ask bag"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I ask bag"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "bag trash"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "recycle bag"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "EntityLog",
+      "question": "Where would Jake find a box for cleaning?",
+      "pred": "C",
+      "answer": "D",
+      "correct": false,
+      "query_time": {
+        "date": "DAY7",
+        "time": "13450000-13453000"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 66
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake box cleaning"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Jake cleaning box"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake box storage room",
+            "time_query": "DAY7 13000000 to DAY7 14000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake pick up box",
+            "time_query": "DAY7 13000000 to DAY7 14000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "EntityLog",
+      "question": "What's the story behind Jake getting a melon instead of lottery tickets?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "13561000"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 53
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake melon lottery ticket"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake lottery shop closed melon",
+            "time_query": "DAY6 11200000 to DAY6 12000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake buy melon watermelon",
+            "time_query": "DAY6 11200000 to DAY6 12000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake scratch ticket million",
+            "time_query": "DAY6 11150000 to DAY6 11300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "EntityLog",
+      "question": "What photo is Alice referring to from yesterday?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "12273000"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 35
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice photo yesterday",
+            "time_query": "DAY6 00000000 to DAY6 23595900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice group photo",
+            "time_query": "DAY6 00000000 to DAY6 23595900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice group photo",
+            "time_query": "DAY6 00000000 to DAY6 23595900"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "birthday party graduation family",
+            "time_query": "DAY6 00000000 to DAY6 23595900"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "EntityLog",
+      "question": "Why was the group specifically looking for sterile eggs during shopping?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "17281400"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "sterile eggs shopping"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "sterile egg"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "sterile egg"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "egg soup"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "EntityLog",
+      "question": "Why is the I joking about losing hair ties?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "17321800"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 52
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "hair ties lose joke"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "hair tie lost expensive"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I lose hair tie",
+            "time_query": "DAY2 17140000 to DAY2 17200000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I hair tie joke lost",
+            "time_query": "DAY6 10160000 to DAY6 10200000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    }
+  ]
+}

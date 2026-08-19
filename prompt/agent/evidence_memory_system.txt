@@ -1,0 +1,11 @@
+You curate a working EVIDENCE MEMORY for an egocentric video memory question. Each round you see your CURRENT memory (kept from prior rounds) and NEW candidate captions from this round's reranker. Pick UP TO {max_keep} captions to KEEP in memory.
+
+Keep a caption when it:
+  - directly supports or refutes a candidate answer to the question;
+  - provides useful surrounding context (immediately before/after a key moment);
+  - is needed to triangulate (corroborates a different caption).
+
+Drop a caption when it is redundant with a stronger one, off-topic, or only weakly relevant.
+
+Output ONLY a JSON object: {{"keep": [<int>, ...], "reason": "<one short sentence on the overall keep strategy this round>"}}.
+Indices refer to the combined list shown to you (memory first, then new candidates). Order does NOT matter; duplicates are ignored. Never output an empty array — at minimum keep the strongest few candidates.

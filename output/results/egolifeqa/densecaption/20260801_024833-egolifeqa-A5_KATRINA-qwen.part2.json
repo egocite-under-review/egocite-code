@@ -1,0 +1,2945 @@
+{
+  "accuracy": 61.40350877192983,
+  "n": 57,
+  "max_rounds": 5,
+  "results": [
+    {
+      "id": 1009,
+      "type": "Event Recollection",
+      "question": "What was I doing the last time I returned to the bedroom?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "13540410"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "return to bedroom"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "enter bedroom",
+            "time_query": "DAY7 00000000 to DAY7 13540410"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "phone",
+            "time_query": "DAY7 12500000 to DAY7 13100000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "clean room",
+            "time_query": "DAY7 12500000 to DAY7 13540410"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "type": "Event Recollection",
+      "question": "When was the last time you tidied the bed?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "14030819"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 37
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "tidy bed"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "make bed"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "tidy bed"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "type": "Event Recollection",
+      "question": "When was the last time I used the tablet?",
+      "pred": "C",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY7",
+        "time": "14035517"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 51
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I use tablet"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I use tablet",
+            "time_query": "DAY5 00000000 to DAY7 14035517"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "tablet",
+            "time_query": "DAY3 00000000 to DAY3 23595999"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I tablet",
+            "time_query": "DAY3 00000000 to DAY3 23595999"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "type": "Event Recollection",
+      "question": "When was the last time you took a photo?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "17333210"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 71
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take photo"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take photo",
+            "time_query": "DAY7 00000000 to DAY7 17333210"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "camera",
+            "time_query": "DAY7 12000000 to DAY7 17333210"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "picture",
+            "time_query": "DAY7 12000000 to DAY7 17333210"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1022,
+      "type": "Entity Log",
+      "question": "Who cut the watermelon?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "18030912"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 36
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "cut watermelon"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "knife watermelon"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "cut watermelon"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "slice watermelon"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1025,
+      "type": "Event Recollection",
+      "question": "When was the last time you used the computer?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "18070911"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "use computer"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "operate computer",
+            "time_query": "DAY6 00000000 to DAY7 18070911"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I use computer",
+            "time_query": "DAY6 00000000 to DAY7 18070911"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "computer",
+            "time_query": "DAY5 00000000 to DAY7 18070911"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1027,
+      "type": "Interpersonal Relationships",
+      "question": "Who complimented Nicous on her great costume?",
+      "pred": "B",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "22005115"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Nicous costume compliment"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "costume great"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous costume"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous great costume"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1028,
+      "type": "Behavior Habit",
+      "question": "What time do I usually get up for work?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY7",
+        "time": "13071915"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "wake up get up morning"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "wake up get up morning time"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "wake up get up morning"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1034,
+      "type": "Interpersonal Relationships",
+      "question": "Who's been watching Tasha while she's been playing the game?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY4",
+        "time": "20391100"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 59
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha play game"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "watch Tasha play",
+            "time_query": "DAY4 15000000 to DAY4 17000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "look at Tasha",
+            "time_query": "DAY4 15000000 to DAY4 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous watch Tasha",
+            "time_query": "DAY4 15000000 to DAY4 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1041,
+      "type": "Behavior Habit",
+      "question": "Who likes to play League of Legends games in their spare time?",
+      "pred": "D",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY4",
+        "time": "22042210"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 46
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "League of Legends game"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Tasha play League of Legends"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha play League of Legends"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Nicous play game"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1044,
+      "type": "Interpersonal Relationships",
+      "question": "Who wasn't at the table with everyone else at lunch today?",
+      "pred": "B",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "20083212"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 53
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "lunch",
+            "time_query": "DAY5 11000000 to DAY5 14000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "eat lunch table",
+            "time_query": "DAY5 11000000 to DAY5 14000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "sit table eat",
+            "time_query": "DAY5 12000000 to DAY5 12300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Nicous",
+            "time_query": "DAY5 11000000 to DAY5 14000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1050,
+      "type": "Future Plans",
+      "question": "What activities are we going to do at the end of this discussion?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "DAY5",
+        "time": "15325203"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 29
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "activities plan end discussion",
+            "time_query": "DAY5 15000000 to DAY5 16000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "go out buy supplies shopping",
+            "time_query": "DAY5 15000000 to DAY5 16000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "sing song dance fun",
+            "time_query": "DAY5 15000000 to DAY5 16000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1057,
+      "type": "Behavior Habit",
+      "question": "Who does Shure always play with on his way to pick up the delivery tonight?",
+      "pred": "C",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY5",
+        "time": "22313908"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 51
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure play delivery",
+            "time_query": "DAY5 20000000 to DAY5 23000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure play Nicous",
+            "time_query": "DAY5 19000000 to DAY5 23000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure Nicous play game",
+            "time_query": "DAY5 19000000 to DAY5 20000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Shure pick up delivery",
+            "time_query": "DAY5 19000000 to DAY5 21000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1060,
+      "type": "Interpersonal Relationships",
+      "question": "Who helped me turn on the glue this morning while I was crafting?",
+      "pred": "B",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "15235815"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "crafting glue",
+            "time_query": "DAY6 06000000 to DAY6 12000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "turn on glue",
+            "time_query": "DAY6 06000000 to DAY6 12000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "help turn on glue",
+            "time_query": "DAY6 10000000 to DAY6 12000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake turn on glue",
+            "time_query": "DAY6 10000000 to DAY6 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1061,
+      "type": "Interpersonal Relationships",
+      "question": "Who was it that asked me where the scissors were during the morning craft?",
+      "pred": "A",
+      "answer": "B",
+      "correct": false,
+      "query_time": {
+        "date": "DAY6",
+        "time": "15235815"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 40
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "scissors where"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "craft",
+            "time_query": "DAY6 08000000 to DAY6 12000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha ask scissors",
+            "time_query": "DAY6 10000000 to DAY6 11000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1062,
+      "type": "Event Recollection",
+      "question": "Who made the speech at the beginning of the party?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "day6",
+        "time": "17430310"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "party"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "speech party beginning"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake speech thank everyone"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice speech"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1067,
+      "type": "Future Plans",
+      "question": "What is Jake planning to do tomorrow?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "day7",
+        "time": "12101116"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 23
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake plan tomorrow",
+            "time_query": "DAY7 00000000 to DAY7 12101116"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake trip travel",
+            "time_query": "DAY6 00000000 to DAY7 12101116"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake leave go away",
+            "time_query": "DAY6 00000000 to DAY7 12101116"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake party game",
+            "time_query": "DAY6 00000000 to DAY7 12101116"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1068,
+      "type": "Interpersonal Relationships",
+      "question": "Who sat on the floor with his girlfriend after the party and interacted with Nicous?",
+      "pred": "D",
+      "answer": "D",
+      "correct": true,
+      "query_time": {
+        "date": "day7",
+        "time": "12101116"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "party"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "sit floor girlfriend",
+            "time_query": "DAY6 20150000 to DAY7 12101116"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous",
+            "time_query": "DAY6 19000000 to DAY7 12101116"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake girlfriend",
+            "time_query": "DAY6 19000000 to DAY7 12101116"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1069,
+      "type": "Future Plans",
+      "question": "What's Nicous's itinerary for the next few days?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "day7",
+        "time": "12101116"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Nicous trip itinerary plans"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Nicous travel come back trip"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous trip travel come back"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous leaving going abroad trip"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1072,
+      "type": "Future Plans",
+      "question": "What will be my plans for the 24th if the confession is official?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "day7",
+        "time": "12101116"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 27
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "confession official 24th plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "confession 24th trip zoo"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "confession official zoo 24th date"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "if confession successful 24th plan"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1082,
+      "type": "Future Plans",
+      "question": "Where will we make the cake later?",
+      "pred": "D",
+      "answer": "A",
+      "correct": false,
+      "query_time": {
+        "date": "day2",
+        "time": "10395904"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 34
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "make cake location"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cake table first floor second floor"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "kitchen table make cake"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "make cake table"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1088,
+      "type": "Behavior Habit",
+      "question": "What would Alice like to do while everyone is talking on the first floor?",
+      "pred": "A",
+      "answer": "A",
+      "correct": true,
+      "query_time": {
+        "date": "day2",
+        "time": "21574605"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice first floor talking",
+            "time_query": "DAY1 00000000 to DAY7 23595999"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice want flowers music cake mahjong cards"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice first floor fiddle flowers"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice flowers first floor"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1093,
+      "type": "Behavior Habit",
+      "question": "What peripherals do I typically use with my computer?",
+      "pred": "B",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "day5",
+        "time": "12282000"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 57
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "use keyboard"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "use trackpad"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "use stylus"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "external keyboard"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1101,
+      "type": "Behavior Habit",
+      "question": "How do I like to hold the screws when assembling something?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "20282902"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "screw assemble"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "screw stack plate"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "screw stack"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "screw hold organize"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1109,
+      "type": "Future Plans",
+      "question": "What time do we enter the party?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "13164016"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 19
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "party",
+            "time_query": "DAY1 12000000 to DAY1 15000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "party arrive enter",
+            "time_query": "DAY1 13000000 to DAY1 16000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "guest arrive",
+            "time_query": "DAY1 13000000 to DAY1 16000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "backyard barbecue",
+            "time_query": "DAY1 13000000 to DAY1 16000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1120,
+      "type": "Behavior Habit",
+      "question": "How does Alice like to use her hands when faced with repetitive operations?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "12112819"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 36
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice hands operation"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice left hand right hand"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice factory hands repetitive"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Alice factory assembly line hand"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1121,
+      "type": "Behavior Habit",
+      "question": "How does Jake like to distribute the work of his hands when he does fine operations?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "13121814"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 47
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake hands fine operation"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake left hand right hand"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Jake hand dominant left right"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake knife cut handle"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1124,
+      "type": "Behavior Habit",
+      "question": "How do I like to keep track of interesting things I come across?",
+      "pred": "B",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "21454405"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 42
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take notes"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "keep track interesting things"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "note down write down record"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "save interesting photo picture"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1125,
+      "type": "Behavior Habit",
+      "question": "What do I usually do with my photos after I've taken them?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "21454405"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 66
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "take photo"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "send photo"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "edit photo"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "add filter"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1133,
+      "type": "Behavior Habit",
+      "question": "Which type of video am I happier when I watch it?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "20282902"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 41
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "watch video happy"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "video pet food travel happy"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "watch video laugh smile happy"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pet video cat dog"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1136,
+      "type": "Interpersonal Relationships",
+      "question": "Who do I prefer to do activities with when I go out?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17232005"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 48
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "go out with Jake"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "go out with Alice"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "go shopping"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "go out with Jake"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1138,
+      "type": "Interpersonal Relationships",
+      "question": "Who among us might secretly observe me in our daily lives?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21414109"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 73
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "secretly watch observe"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake watch observe spy"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice secretly watch spy observe"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure secretly watch spy observe"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1141,
+      "type": "Future Plans",
+      "question": "What might we cook in the future?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY1",
+        "time": "19112200"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 17
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cook future plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "fondue cook future"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "creative dish cook"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "seafood cook next time"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1142,
+      "type": "Behavior Habit",
+      "question": "How would I return a used shopping cart?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY1",
+        "time": "21495502"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 47
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "shopping cart return"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "place shopping cart"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "shopping cart return place"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "shopping cart return place arrange"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1149,
+      "type": "Behavior Habit",
+      "question": "If I were to keep track of what is needed, which would I most likely use",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17290413"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 28
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "whiteboard write"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "cell phone memo note"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tweet reminder"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 3
+        }
+      ]
+    },
+    {
+      "id": 1158,
+      "type": "Interpersonal Relationships",
+      "question": "Who knows more about Shure's musical preferences?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "15405302"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 37
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure music preference"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure music taste"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure music preference"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I Shure music"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1162,
+      "type": "Interpersonal Relationships",
+      "question": "Who is most likely to be interested in my dance?",
+      "pred": "B",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "15372009"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 79
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I dance"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure watch dance"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jake watch dance"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia watch dance"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1170,
+      "type": "Interpersonal Relationships",
+      "question": "Who wasn't involved when Alice played the guess your height game?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17194714"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 60
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "Alice guess height game"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Alice guess height"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure height guess",
+            "time_query": "DAY2 11400000 to DAY2 11500000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "height guess game",
+            "time_query": "DAY2 11400000 to DAY2 11500000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1171,
+      "type": "Future Plans",
+      "question": "What would we put as a backdrop if the dance was finalized on the last day?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "16041101"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 22
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance backdrop final"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance backdrop screen projection"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "rainbow starry sky logo city"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "dance background night view"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1176,
+      "type": "Interpersonal Relationships",
+      "question": "Who didn't join us when we were watching Tasha's video on the ipad?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "17563011"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 50
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "watch Tasha video ipad",
+            "time_query": "DAY2 17000000 to DAY2 18000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Tasha video ipad",
+            "time_query": "DAY2 17000000 to DAY2 18000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "watch video ipad",
+            "time_query": "DAY2 17000000 to DAY2 18000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "watch Tasha",
+            "time_query": "DAY2 17000000 to DAY2 18300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1179,
+      "type": "Behavior Habit",
+      "question": "Where am I used to putting my computer in my office?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "19335614"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 71
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "computer bureau"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "put computer on desk"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "computer on table"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "bureau"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1181,
+      "type": "Interpersonal Relationships",
+      "question": "At noon when everyone gathered at the table to eat, who was missing from the group of four?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "18070609"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 58
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "everyone gather table eat noon",
+            "time_query": "DAY2 12000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "eat table noon",
+            "time_query": "DAY1 12000000 to DAY1 13000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "hot pot noon eat",
+            "time_query": "DAY1 11000000 to DAY1 14000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pancake breakfast table",
+            "time_query": "DAY2 11000000 to DAY2 12000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1182,
+      "type": "Interpersonal Relationships",
+      "question": "Who wasn't at this table at lunch when everyone was discussing Korean non-food dishes?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "18070609"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 30
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Korean non-food dishes discussion"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Korean dish discussion",
+            "time_query": "DAY2 13000000 to DAY2 14000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 1184,
+      "type": "Behavior Habit",
+      "question": "How do I usually dry my clothes after washing them in the washing machine?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY2",
+        "time": "18061002"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "washing machine clothes"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "hang clothes drying rack"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "clothes outside balcony"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "fan radiator dry clothes"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1186,
+      "type": "Interpersonal Relationships",
+      "question": "Who is completely uninvolved in watching and learning when I'm practicing dance alone?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "16051619"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 54
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "dance practice alone"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "practice dance alone living room",
+            "time_query": "DAY2 15243100 to DAY2 15295900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "watching dance practice",
+            "time_query": "DAY2 15200000 to DAY2 15350000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "living room dance",
+            "time_query": "DAY2 15200000 to DAY2 15300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1190,
+      "type": "Interpersonal Relationships",
+      "question": "This afternoon we went to pet dogs. Who petted the dog the longest?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21582000"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 60
+      },
+      "trace": [
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pet dog",
+            "time_query": "DAY2 12000000 to DAY2 21582000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure pet dog",
+            "time_query": "DAY2 12000000 to DAY2 21582000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Jack pet dog",
+            "time_query": "DAY2 12000000 to DAY2 21582000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Nicous pet dog",
+            "time_query": "DAY2 12000000 to DAY2 21582000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1191,
+      "type": "Interpersonal Relationships",
+      "question": "Who wasn't involved when we were talking about shopping for our girlfriends on the way back from petting the dog and getting ready to go home?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY2",
+        "time": "21403900"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 45
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "shopping girlfriend",
+            "time_query": "DAY2 21000000 to DAY2 22000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "pet dog",
+            "time_query": "DAY2 21000000 to DAY2 21500000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "girlfriend gift makeup",
+            "time_query": "DAY2 21300000 to DAY2 21500000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "go home",
+            "time_query": "DAY2 21000000 to DAY2 22000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1192,
+      "type": "Interpersonal Relationships",
+      "question": "What kind of topics does Nicous usually talk to me about?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "day4",
+        "time": "13301312"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 10
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Nicous talk conversation"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 1
+        }
+      ]
+    },
+    {
+      "id": 1196,
+      "type": "Behavior Habit",
+      "question": "What's my pizza habit?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "14542806"
+      },
+      "cap_hit": "NEAR",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 44
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "pizza habit crust cheese slice"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I eat pizza crust slice",
+            "time_query": "DAY3 11580000 to DAY3 12200000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "I pick toppings off pizza crust",
+            "time_query": "DAY3 12070000 to DAY3 12100000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "I crust eat small slice habit",
+            "time_query": "DAY3 12040000 to DAY3 12100000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1197,
+      "type": "Interpersonal Relationships",
+      "question": "Who left at noon when everyone was eating pizza on the second floor?",
+      "pred": "A",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "14554309"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 69
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "eating pizza second floor",
+            "time_query": "DAY3 12000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "leave upstairs",
+            "time_query": "DAY3 12000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "person leave",
+            "time_query": "DAY3 12000000 to DAY3 12300000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure leave",
+            "time_query": "DAY3 12000000 to DAY3 12300000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1203,
+      "type": "Event Recollection",
+      "question": "What do I usually talk about when I'm alone with Shure today?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "19432502"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 13
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure I talk",
+            "time_query": "DAY3 00000000 to DAY3 23595900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "Shure I emotional breakup feelings",
+            "time_query": "DAY3 00000000 to DAY3 23595900"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    },
+    {
+      "id": 1205,
+      "type": "Behavior Habit",
+      "question": "Which part of the line do I prefer to walk in during group actions at the park today?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "18054917"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 60
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "park walk group",
+            "time_query": "DAY3 00000000 to DAY3 23595900"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "walk line front position",
+            "time_query": "DAY3 14000000 to DAY3 16000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "flower stick performance line",
+            "time_query": "DAY3 14000000 to DAY3 16000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "walk line front back",
+            "time_query": "DAY3 14000000 to DAY3 16000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1208,
+      "type": "Future Plans",
+      "question": "What might I buy at the grocery store later?",
+      "pred": "D",
+      "answer": "C",
+      "correct": false,
+      "query_time": {
+        "date": "DAY3",
+        "time": "16294005"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 36
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "grocery store buy purchase",
+            "time_query": "DAY3 16000000 to DAY3 16294005"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "sanitary towel pad feminine",
+            "time_query": "DAY3 14000000 to DAY3 16294005"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "daily use toiletries personal care",
+            "time_query": "DAY3 14000000 to DAY3 16294005"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "snack nibble between meal food",
+            "time_query": "DAY3 14000000 to DAY3 16294005"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1210,
+      "type": "Interpersonal Relationships",
+      "question": "Who else was involved in playing racing games with me when I was in the game room?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "21000318"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 10
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "racing game game room"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 1
+        }
+      ]
+    },
+    {
+      "id": 1211,
+      "type": "Interpersonal Relationships",
+      "question": "Who wasn't involved when everyone was throwing bowling balls in the game room?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "20215306"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 63
+      },
+      "trace": [
+        {
+          "tool": "search_activity",
+          "input": {
+            "query": "bowling balls game room"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "throwing bowling ball",
+            "time_query": "DAY3 16000000 to DAY3 17000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure throw bowling",
+            "time_query": "DAY3 16000000 to DAY3 17000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Lucia throw bowling",
+            "time_query": "DAY3 16000000 to DAY3 17000000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1216,
+      "type": "Future Plans",
+      "question": "What might we cook when we get back?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "19402219"
+      },
+      "cap_hit": "HIT",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 38
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "cook when get back",
+            "time_query": "DAY3 19000000 to DAY3 20000000"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "fondue cook",
+            "time_query": "DAY3 19000000 to DAY3 20000000"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "roast meat get back",
+            "time_query": "DAY3 19000000 to DAY3 20000000"
+          },
+          "iter": 2
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure I cook get back",
+            "time_query": "DAY3 19300000 to DAY3 19450000"
+          },
+          "iter": 3
+        },
+        {
+          "tool": "search_action_speech",
+          "input": {
+            "query": "Shure I cook get back",
+            "time_query": "DAY3 19300000 to DAY3 19450000"
+          },
+          "iter": 4
+        }
+      ]
+    },
+    {
+      "id": 1218,
+      "type": "Future Plans",
+      "question": "What are we doing tomorrow morning?",
+      "pred": "C",
+      "answer": "C",
+      "correct": true,
+      "query_time": {
+        "date": "DAY3",
+        "time": "20215306"
+      },
+      "cap_hit": "MISS",
+      "retrieved_counts": {
+        "activities": 0,
+        "raw_captions": 15
+      },
+      "trace": [
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tomorrow morning plan"
+          },
+          "iter": 0
+        },
+        {
+          "tool": "search_conversation",
+          "input": {
+            "query": "tomorrow clean"
+          },
+          "iter": 1
+        },
+        {
+          "tool": "answer",
+          "input": {},
+          "iter": 2
+        }
+      ]
+    }
+  ]
+}

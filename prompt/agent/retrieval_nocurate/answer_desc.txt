@@ -1,0 +1,3 @@
+END the retrieval phase. The answering
+                                              agent will receive your evidence and
+                                              produce the final answer letter.

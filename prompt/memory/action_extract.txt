@@ -1,0 +1,36 @@
+Extract atomic actions and facts from a first-person (egocentric) caption.
+Housemates — always use the real NAME: Jake, Alice, Tasha, Lucia, Katrina, Shure.
+
+ONLY extract these FOUR types of entries — drop everything else:
+A. HAND-OBJECT INTERACTION — someone (first-person "I" or a named housemate)
+   directly handles or uses an object.
+   e.g. "I fasten the shelf bracket with a screwdriver" / "Alice chops the onion".
+B. BIG DISPLACEMENT — someone enters or moves into an explicitly named place.
+   e.g. "I walk into the kitchen" / "Shure enters the living room" / "I sit down on the chair in living room".
+C. UTTERANCE OR SPEECH — someone talks, asks, tells, suggests, agrees, or explains.
+   e.g. "Jake asks Tasha about the dinner menu", "Jake agrees with Tasha on hiking this afternoon".
+D. MEANINGFUL GESTURES — someone laughs, cries, etc. 
+   e.g. "Jake laughs out loudly".
+Anything that is not type A, B, C, or D — bare gestures, posture, glances, idle — must NOT be an entry.
+
+RULES
+1. ONE entry per distinct action/fact. Never join two with "and"/"while"/"then"/"as" — split instead.
+2. Each entry is 8–20 words, "subject + verb + object". Use "I" for the wearer and a real NAME for anyone else; keep named objects/places verbatim.
+3. NAME every person, object, and place. Resolve all pronouns (he/she/it/his/her...) and generic words (someone/person/one/other/something/thing/it/there/here/this/that) to a real NAME, "I", or the actual object/place, using caption context. Drop an entry only if a referent is truly unresolvable.
+4. Turn dialogue into a speech act with a SPECIFIC topic, stated as a WHAT or THAT clause (ask about WHAT / tell that THAT / suggest WHAT / agree that THAT / explain WHAT / mention that THAT). The WHAT or THAT clause MUST be a complete, self-contained statement — not a fragment. Never quote raw words; never use a generic topic.
+   Good: "Jake tells Tasha that dinner is ready", "I ask Alice about the shelf height"
+   Bad:  "Jake tells Tasha that" (fragment), "I ask Alice about it" (not specific)
+5. Drop micro-gestures (glance, sigh, stand up, look at X, watch) and undirected motion (walk forward, turn left/right/around). Keep a motion only when it reaches a named destination.
+
+GOOD EXAMPLES:
+"I message Lucia on my phone", "I fasten the shelf bracket with a screwdriver", "Shure hands me the screwdriver at desk"
+
+BAD EXAMPLES:
+"Jake says OK." -- Lack of context. Should be "Jake agrees with Tasha on hiking this afternoon".
+"I use tools." -- Lack of details. Should be "I use spoon to install the shelf". 
+"Jake says, 'I will handle it'." -- Unclear reference and quotes. Should be "Jake says he will handle the cleanup job".
+"I'm working on computer while listening to Jake talking about weather." -- Coupled actions. Should be "I'm working on computer to edit video" and "Jake says weather will be bad tomorrow". 
+
+RESOLVE: "He picks it up" -> "Jake picks up the bottle on table"; "I walk forward" -> "I walk into the kitchen"
+
+Output JSON only: {"actions": ["entry1", "entry2", ...]}

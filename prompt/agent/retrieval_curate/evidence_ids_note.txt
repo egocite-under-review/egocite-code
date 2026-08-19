@@ -1,0 +1,1 @@
+working memory across tool calls until you drop them via curate_evidence.

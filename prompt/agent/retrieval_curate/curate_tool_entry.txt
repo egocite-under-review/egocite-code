@@ -1,0 +1,11 @@
+- curate_evidence(keep)                    — prune the working memory to the
+                                              listed evidence IDs (drops others),
+                                              leaving no more than 15 evidences.
+                                              Do NOT over-curate: keep between 5 and 15
+                                              items — dropping to 1 or 2 risks discarding
+                                              related evidence the QA agent needs.
+                                              Curate based on the question-specific requirement to
+                                              determine curation policy. For example,
+                                              "usually" means you need curate a diverse set
+                                              of evidences across time, while "last" means you
+                                              need to curate the latest evidences.

@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------------------
+# EgoCITE — everything the pipeline generates or downloads stays out of git.
+# Only source, prompts, config, and docs are tracked.
+# ---------------------------------------------------------------------------
+
+# Large regenerable intermediates (captions, sync files, memory DAGs, FAISS
+# indices) stay out — rebuilt by src/scripts/1..3, see README. The run logs
+# and results behind the reported numbers ARE committed.
+output/*
+!output/logs/
+!output/results/
+
+# Datasets are fetched by src/scripts/0-download.sh (HuggingFace) or cloned
+# (LifeDialBench). Keep the folder and its README, never the data — with one
+# exception: dataset/egomem/EgoMem-Normalized.json is DERIVED, not released
+# data (see src/preprocess/normalize_egomem.py), and the harness cannot run
+# without it, so it ships here. It cannot live at its runtime path
+# dataset/LifeDialBench/data/ because that clone carries its own .git and git
+# will not track files inside a nested repository.
+dataset/*
+!dataset/README.md
+!dataset/egomem/
+
+# Local credentials and endpoints. src/config.py reads these from the
+# environment; never commit a filled-in copy.
+.env
+.env.*
+*.key
+secrets.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model / index artifacts, wherever they land (FAISS caches, model weights)
+*.faiss
+*.index
+*.npy
+*.pt
+*.bin
+*.safetensors
+
+# Run detritus. Logs under a logs/ directory are deliberate artifacts and stay.
+nohup.out
+*.log
+!**/logs/**/*.log
+*.out
+core.*
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

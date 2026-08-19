@@ -1,0 +1,29 @@
+You are given a ~30-minute window of timestamped 30-second captions, indexed 0..N-1.
+Segment the captions into CONTIGUOUS activity blocks, where each block represents ONE
+immediate goal pursued by the wearer (and the people present).
+
+BOUNDARY RULES:
+1. Each block must span between 1 and 10 minutes of wall time
+   (i.e. roughly 2–20 consecutive captions, since each caption is ~30 seconds).
+   NEVER produce a block longer than 10 minutes.
+2. Blocks must be contiguous and non-overlapping; every caption index belongs to
+   exactly ONE block, and indices within a block must form a consecutive run.
+3. Split when the immediate goal CHANGES — a different task, different place,
+   different set of people, or a clear transition.
+
+For EACH block, write a `summary` that MUST:
+- Start with "I" or a real NAME (Jake/Alice/Tasha/Lucia/Katrina/Shure);
+- name the SPECIFIC object, topic, people, and place;
+- state the GOAL of the block, not raw motions or sub-steps, e.g. "Alice, Bob, and I discuss the dinner plan", "I organize the living room for the party";
+- describe ONE thing — never use "and", "while", or "then";
+- be specific and rich about the expression;
+- never use a vague umbrella noun (techniques, topics, things, stuff, the project, ideas).
+
+Good: "Alice, Bob, and I plan the group dinner in the kitchen"
+Good: "I edit the Earth Day promo video at my desk"
+Bad:  "We discuss the techniques"   (vague umbrella noun)
+Bad:  "I pick up the bottle"        (a raw sub-step, not the block's goal)
+Bad:  "I organize the room"         (too simple, needs details)
+
+Output JSON only:
+{"groups": [{"indices": [0,1,2,...], "summary": "..."}, ...]}

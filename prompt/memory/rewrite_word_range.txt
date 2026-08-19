@@ -1,0 +1,10 @@
+Rewrite the SUMMARY so it has $lo-$hi words, keeping its meaning and
+the same subject ("I" or a real name).
+
+RULES
+- The result MUST be $lo-$hi words — count carefully.
+- Use the CONTEXT (the source captions) to add or trim specific, TRUE detail
+  (who, what, where, how, why). NEVER invent facts that are not in the context.
+- Describe ONE thing; never use "and", "while", or "then".
+
+Output JSON only: {"summary": "..."}
