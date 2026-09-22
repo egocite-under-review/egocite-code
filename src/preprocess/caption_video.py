@@ -99,6 +99,8 @@ STRIDE_SEC = 15         # hop between windows (== WINDOW_SEC: no overlap)
 FPS        = 1          # frames sampled per second inside a window
 MAX_FRAMES = 16         # hard cap on images per window
 POLL_SEC   = 30         # batch-status poll interval
+FRAMES_ROOT = None      # when set, windows use pre-rendered annotated JPEGs
+                        # from FRAMES_ROOT/<clip_stem>/ instead of ffmpeg frames
 
 
 # ── person context ────────────────────────────────────────────────────────────
@@ -205,22 +207,52 @@ def _extract_frames(src: Path, win: int, win_dur: int, tmp: str):
 
     `-nostdin` + stdin=DEVNULL are load-bearing: ffmpeg otherwise takes over the
     terminal for its interactive keys and leaves it with echo disabled."""
+    if FRAMES_ROOT:
+        return _pick_annotated_frames(src, win, win_dur, tmp)
     frame_dir = Path(tmp) / f"{src.stem}_{win:06d}_frames"
     frame_dir.mkdir(parents=True, exist_ok=True)
     subprocess.run(
         ["ffmpeg", "-nostdin", "-y", "-i", str(src), "-ss", str(win), "-t", str(max(1, win_dur)),
-         "-vf", f"fps={FPS},scale=512:-2", "-q:v", "3", str(frame_dir / "f_%03d.jpg")],
+         "-vf", f"fps={FPS},scale=1080:-2", "-q:v", "3", str(frame_dir / "f_%03d.jpg")],
         capture_output=True, text=True, stdin=subprocess.DEVNULL,
     )
     frames = sorted(frame_dir.glob("f_*.jpg"))[:MAX_FRAMES]
     if not frames:
         subprocess.run(
             ["ffmpeg", "-nostdin", "-y", "-ss", str(win), "-i", str(src),
-             "-frames:v", "1", "-vf", "scale=512:-2", "-q:v", "3",
+             "-frames:v", "1", "-vf", "scale=1080:-2", "-q:v", "3",
              str(frame_dir / "f_001.jpg")],
             capture_output=True, text=True, stdin=subprocess.DEVNULL,
         )
         frames = sorted(frame_dir.glob("f_*.jpg"))
+    return frame_dir, frames
+
+
+def _pick_annotated_frames(src: Path, win: int, win_dur: int, tmp: str):
+    """FRAMES_ROOT mode: this window's frames are the pre-rendered annotated
+    JPEGs under FRAMES_ROOT/<clip_stem>/, chosen by the timestamps in that
+    folder's detections.json, resized to 1080p so the VLM input matches the
+    ffmpeg flow. A missing clip folder yields no frames — the window is
+    reported as ERROR and stays uncached."""
+    from PIL import Image
+    frame_dir = Path(tmp) / f"{src.stem}_{win:06d}_frames"
+    frame_dir.mkdir(parents=True, exist_ok=True)
+    det = Path(FRAMES_ROOT) / src.stem / "detections.json"
+    if not det.exists():
+        return frame_dir, []
+    times = [r["t"] for r in json.loads(det.read_text())["frames"]]
+    picked = [i for i, t in enumerate(times) if win <= t < win + win_dur][:MAX_FRAMES]
+    frames = []
+    for n, i in enumerate(picked, 1):
+        jpg = Path(FRAMES_ROOT) / src.stem / f"f_{i:04d}.jpg"
+        if not jpg.exists():
+            continue
+        img = Image.open(jpg)
+        if img.height != 1080:
+            img = img.resize((round(img.width * 1080 / img.height), 1080))
+        target = frame_dir / f"f_{n:03d}.jpg"
+        img.save(target, quality=90)
+        frames.append(target)
     return frame_dir, frames
 
 
@@ -580,6 +612,7 @@ def merge_person(person: str, out_dir: Path) -> str:
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    global WINDOW_SEC, STRIDE_SEC, FRAMES_ROOT
     ap = argparse.ArgumentParser(
         description="Caption EgoLife video with 1-fps frames, in batch.")
     ap.add_argument("--person",     default=None, help="e.g. A1_JAKE (omit for all)")
@@ -593,15 +626,34 @@ def main():
                          f"server). Default: {MODEL}")
     ap.add_argument("--batch-size", type=int, default=BATCH_SIZE,
                     help=f"Windows per batch job (default: {BATCH_SIZE})")
+    ap.add_argument("--window-sec", type=int, default=WINDOW_SEC,
+                    help=f"Caption window length in seconds (default: {WINDOW_SEC})")
+    ap.add_argument("--stride-sec", type=int, default=None,
+                    help="Hop between windows (default: --window-sec)")
     ap.add_argument("--overwrite",  action="store_true",
                     help="Overwrite existing output files instead of skipping")
+    ap.add_argument("--frames-root", default=None,
+                    help="Use pre-rendered annotated JPEGs from this root "
+                         "(<root>/<clip_stem>/f_XXXX.jpg + detections.json) "
+                         "instead of extracting frames with ffmpeg")
+    ap.add_argument("--out-name", default=None,
+                    help="Override the output directory name, e.g. gemma_w10_yolo")
     args = ap.parse_args()
 
     range_start = _hhmmssff_to_sec(args.start) if args.start else 0
     range_end   = _hhmmssff_to_sec(args.end)   if args.end   else 86400
 
+    WINDOW_SEC = args.window_sec
+    STRIDE_SEC = args.stride_sec if args.stride_sec is not None else args.window_sec
+
     args.model = MODEL_ALIASES.get(args.model.lower(), args.model)
     out_dir = _backend_dir(args.model)
+    if WINDOW_SEC != 15:               # never mix window lengths in one dir
+        out_dir = Path(f"{out_dir}_w{WINDOW_SEC}")
+    if args.frames_root:
+        FRAMES_ROOT = args.frames_root
+    if args.out_name:
+        out_dir = Path(config.vlm_caption_dir(args.out_name))
     out_dir.mkdir(parents=True, exist_ok=True)
     print(f"model  : {args.model}")
     print(f"output : {out_dir}")

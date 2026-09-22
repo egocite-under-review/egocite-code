@@ -1,13 +1,16 @@
-# EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory
+# EgoCITE: Situation-Aware Context-Augmented Indexing and Retrieval for Long-Horizon Egocentric Memory
 
-Anonymous code release for review. EgoCITE is an agentic memory framework for
-egocentric QA, evaluated on EgoLifeQA, EgoMem, and Ego-R1-Bench.
+Anonymous code release for review. EgoCITE is a situation-aware framework that
+contextualizes memory storage and retrieval for long-horizon egocentric question
+answering, evaluated on EgoLifeQA, EgoMem, and EgoR1-Bench.
+
+[**Anonymous project page**](https://egocite-under-review.github.io/)
 
 | Component | What it does |
 |---|---|
-| `EgoScheme` | uses local multimodal context to turn fragmentary video captions and speech transcripts into self-contained atomic memory indices |
-| `EgoIndex` | organizes action, activity, utterance, and conversation representations into searchable multi-view memory indices |
-| `EgoRetrv` | combines semantic search with question-conditioned temporal relevance scoring and curation of retrieved evidence |
+| `EgoScheme` | uses local multimodal context to resolve coreferences and ellipses, transforming fragmented captions and transcripts into self-contained atomic memories |
+| `EgoIndex` | organizes action, activity, utterance, and conversation memories into multi-view, multi-granularity indices that capture complementary perspectives on each situation |
+| `EgoRetrv` | combines semantic search with question-conditioned temporal relevance scoring and iterative evidence curation to retrieve memories matching the question's intended situation |
 
 ## 1. Install
 
@@ -59,6 +62,10 @@ For a VLM source, caption the video first:
 `python src/preprocess/caption_video.py --person A1_JAKE --model gemma`
 (`--model gemini` uses the Gemini API and needs `GEMINI_API_KEY`; `gemma` uses a
 local vision vLLM server at `VLLM_VISION_BASE_URL`).
+
+The video captioner also accepts `--window-sec` and `--stride-sec` to control
+caption windows, `--frames-root` to use pre-rendered annotated frames, and
+`--out-name` to keep an experimental run in a separate output directory.
 
 ## 4. Build the memory
 
